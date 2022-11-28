@@ -3,6 +3,7 @@ title: "Black-Schols"
 draft: false
 ---
 
+You can find the repository [here](https://github.com/baledick/Black-Scholes-Model)
 # Black Scholes Model
 
 **Amandeep Singh, Vasilis Valatsos**
@@ -98,11 +99,6 @@ plt.show()
 ```
 
 
-    
-![png](/images/black-scholes/output_9_0.png)
-    
-
-
 Next, we define the exercise price, where here we choose a "smooth" deviation from the original stock price, essentially taking a stable function and adding noise, defined by a uniform distribution over an arbitrary, probably non-realistic range. Likewise, the interest rate should float between 0% and 1%, and finally the range of the time to expiration was made 1, 2, 3, 4, and 5 months.
 
 
@@ -133,10 +129,6 @@ plt.savefig('example.png')
 plt.show()
 ```
 
-
-    
-![png](/images/black-scholes/output_14_0.png)
-    
 
 
 Since we see that the behaviour is as expected and since we want to reuse the names of variables, we clear everything and move to Section 2. (We could just skip this step since the variables would simply get replaced, but it is easier during working to just clear everything. There were many instances where we unknowingly used variables that we didn't replace and were puzzled at the plots no changing etc.)
@@ -198,17 +190,6 @@ for model in option:
     
     plt.show()
 ```
-
-
-    
-![png](/images/black-scholes/output_23_0.png)
-    
-
-
-
-    
-![png](/images/black-scholes/output_23_1.png)
-    
 
 
 Finally, we use pandas to export all of the information we have gathered and created into an excel file. The model genrates the data frame of values of change in option prices which can be converted into an xlsx file which can then be
@@ -240,9 +221,7 @@ time = walk[0]
 stock_price = walk[1] + np.abs(min(walk[1])) +1
 plt.plot(time, stock_price)
 ```
-    
-![png](/images/black-scholes/output_9_1.png)
-    
+
 
 
 Next, we define the exercise price, where here we choose a "smooth" deviation from the original stock price, essentially taking a stable function and adding noise, defined by a uniform distribution over an arbitrary, probably non-realistic range. Likewise, the interest rate should float between 0% and 1%, and finally the range of the time to expiration was made 1, 2, 3, 4, and 5 months.
@@ -274,11 +253,6 @@ plt.legend(['Stock Price', ' Call Price', 'Put Price'])
 plt.savefig('example.png')
 plt.show()
 ```
-
-
-    
-![png](/images/black-scholes/output_14_0.png)
-    
 
 
 Since we see that the behaviour is as expected and since we want to reuse the names of variables, we clear everything and move to Section 2. (We could just skip this step since the variables would simply get replaced, but it is easier during working to just clear everything. There were many instances where we unknowingly used variables that we didn't replace and were puzzled at the plots no changing etc.)
@@ -341,16 +315,6 @@ for model in option:
     plt.show()
 ```
 
-
-    
-![png](/images/black-scholes/output_23_0.png)
-    
-
-
-
-    
-![png](/images/black-scholes/output_23_1.png)
-    
 
 
 Finally, we use pandas to export all of the information we have gathered and created into an excel file. The model genrates the data frame of values of change in option prices which can be converted into an xlsx file which can then be

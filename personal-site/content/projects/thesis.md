@@ -2,6 +2,7 @@
 title: "Bachelor-Thesis"
 draft: false
 ---
+You can find the thesis [here](/pdfs/bthesis.pdf) and the code [here](https://github.com/baledick/1d-RandAFHeisenberg-SDRG)
 
 ## The One–Dimensional Heisenberg Model, RG Methods and Numerical Simulation of the SDRG Process
 
@@ -14,5 +15,3 @@ These results where the first of many, yielded through the intense research that
 More specifically, the XX chain, presented by Fisher, can be used to obtain exact results for the behaviour of phases dominated by randomness, as well as the critical behaviour near the various zero temperature phase transitions that occur. Studying the properties of antiferromagnetic Heisenberg spin-1/2 chains with random bonds, we analyse the low-energy behaviour, by decimating the strongest bond, replacing it with a new effective bond between the nearest neighbours. Repeating the procedure, the distribution becomes extremely broad improving the accuracy of the approximation. 
 
 The structure of the thesis is this. First we introduce the Heisenberg model, it's relation to the Ising and Free Fermion models, solve it exactly for the ferromagnetic case using the Bethe Ansatz and introduce the Block RG method for the antiferromagnetic case. Afterwards we present the Strong Disorder RG method, using a modernised version of Fisher's process to solve the random AF XX chain. Finally, we present the methods we created to simulate the process.
-
-You can find the thesis [here](/pdfs/bthesis.pdf)

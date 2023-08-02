@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://baledick.github.io/assets/css/main.css"/>
+    <link rel="canonical" href="https://baledick.github.io/projects/">
+    <noscript><link rel="stylesheet" href="https://baledick.github.io/assets/css/noscript.css"/></noscript>
+    <style>
+        :root{--site-background : url("https://baledick.github.io/images/olivetrees.jpg")};
+    </style> 
+    
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+
+<body class="is-preload">
+
+    
+        <div id="wrapper">
+
+            
+                <header id="header">
+                    <div class="logo">
+                        <a href="/">
+                            <span class="icon">
+                                <img src="/images/logo.png">
+                            </span>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <div class="inner">
+                            <h1>Projects</h1>
+                            
+                        </div>
+                    </div>
+                    <nav>
+                        <ul>
+                            
+                                
+                                    
+                                        <li>
+                                            <a href="#bachelor-thesis">Bachelor-Thesis</a>
+                                        </li>
+                                    
+                                
+                            
+                                
+                                    
+                                        <li>
+                                            <a href="#black-schols">Black-Schols</a>
+                                        </li>
+                                    
+                                
+                            
+                                
+                                    
+                                        <li>
+                                            <a href="#human-diffusion">Human-Diffusion</a>
+                                        </li>
+                                    
+                                
+                            
+                        </ul>
+                    </nav>
+                </header>
+
+            
+                <div id="main">
+
+                    
+                        
+                            
+                                <article id="bachelor-thesis">
+                                    <h2 class="major">Bachelor-Thesis</h2>
+                                    <span class="image main"><img src="" alt="" /></span>
+                                    <p>You can find the thesis <a href="/pdfs/bthesis.pdf">here</a> and the code <a href="https://github.com/baledick/1d-RandAFHeisenberg-SDRG">here</a></p>
+<h2 id="the-onedimensional-heisenberg-model-rg-methods-and-numerical-simulation-of-the-sdrg-process">The One–Dimensional Heisenberg Model, RG Methods and Numerical Simulation of the SDRG Process</h2>
+<h3 id="abstract">Abstract</h3>
+<p>The Strong Disorder Renormalisation Group (SDRG) method, first introduced by Dasgupta, Ma and Hu, and later greatly expanded by Fisher, yields asymptotically exact results in distributions where the disorder grows without limit in large scales, whilst Fisher also calculated limit values as well as scaling factors for random spin chains.</p>
+<p>These results where the first of many, yielded through the intense research that followed afterwards, firstly in random quantum systems, and later expanded in classically disordered systems as well. The previous Real Space RG methods that were used treated the whole space as homogenous, allowing the grouping of spins into super-spins, and although in systems absent of randomness this homogenity is physically verifiable, it comes into question in the presence of disordered systems. The SDRG method has the property of renormalising space in a non-homogenous way so it can better handle local disorders.</p>
+<p>More specifically, the XX chain, presented by Fisher, can be used to obtain exact results for the behaviour of phases dominated by randomness, as well as the critical behaviour near the various zero temperature phase transitions that occur. Studying the properties of antiferromagnetic Heisenberg spin-1/2 chains with random bonds, we analyse the low-energy behaviour, by decimating the strongest bond, replacing it with a new effective bond between the nearest neighbours. Repeating the procedure, the distribution becomes extremely broad improving the accuracy of the approximation.</p>
+<p>The structure of the thesis is this. First we introduce the Heisenberg model, it&rsquo;s relation to the Ising and Free Fermion models, solve it exactly for the ferromagnetic case using the Bethe Ansatz and introduce the Block RG method for the antiferromagnetic case. Afterwards we present the Strong Disorder RG method, using a modernised version of Fisher&rsquo;s process to solve the random AF XX chain. Finally, we present the methods we created to simulate the process.</p>
+
+                                </article>
+                            
+                        
+                    
+                        
+                            
+                                <article id="black-schols">
+                                    <h2 class="major">Black-Schols</h2>
+                                    <span class="image main"><img src="" alt="" /></span>
+                                    <p>You can find the repository <a href="https://github.com/baledick/Black-Scholes-Model">here</a></p>
+<h1 id="black-scholes-model">Black Scholes Model</h1>
+<p><strong>Amandeep Singh, Vasilis Valatsos</strong></p>
+<p>We attempt to make a program that predicts optional premiums, using the Black-Scholes model, introduced in 1973.</p>
+<p>To start off, we first install all the required modules, (We have the cell commented, but in the case that one or more modules aren&rsquo;t installed, uncomment and run once the cell below.)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># pip install -r &#34;requirements.txt&#34;</span>
+</span></span></code></pre></div><p>where the module scipy.stats is not imported here but is needed in the class that we import.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> BlackScholes <span style="color:#f92672">import</span> Model
+</span></span></code></pre></div><h3 id="section-1">Section 1</h3>
+<h4 id="testing">Testing</h4>
+<p>To check whether the class functions work, as well as to explain the process, we can create a Brownian motion to simulate a possilbe stock price over four years (1460 days) and calculate all the needed variables.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">brownian</span>(time_range, mean<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, sd<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>):
+</span></span><span style="display:flex;"><span>    time <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linspace(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>,time_range)
+</span></span><span style="display:flex;"><span>    path <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>zeros(time_range)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">1</span>, time_range):
+</span></span><span style="display:flex;"><span>        path[i] <span style="color:#f92672">=</span> path[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]<span style="color:#f92672">+</span>np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>normal(mean<span style="color:#f92672">*</span>time[i], sd<span style="color:#f92672">*</span>time[i])
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> time, path
+</span></span></code></pre></div><p>where time has a range from 0 to 1, because we can always scale the dates of the hypothetical stock to fit those values with an appropriate transformation. Below we see the graph of the motion</p>
+<h1 id="black-scholes-model-1">Black Scholes Model</h1>
+<p><strong>Amandeep Singh, Vasilis Valatsos</strong></p>
+<p>We attempt to make a program that predicts optional premiums, using the Black-Scholes model, introduced in 1973.</p>
+<p>To start off, we first install all the required modules, (We have the cell commented, but in the case that one or more modules aren&rsquo;t installed, uncomment and run once the cell below.)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># pip install -r &#34;requirements.txt&#34;</span>
+</span></span></code></pre></div><p>where the module scipy.stats is not imported here but is needed in the class that we import.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> BlackScholes <span style="color:#f92672">import</span> Model
+</span></span></code></pre></div><h3 id="section-1-1">Section 1</h3>
+<h4 id="testing-1">Testing</h4>
+<p>To check whether the class functions work, as well as to explain the process, we can create a Brownian motion to simulate a possilbe stock price over four years (1460 days) and calculate all the needed variables.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">brownian</span>(time_range, mean<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, sd<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>):
+</span></span><span style="display:flex;"><span>    time <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linspace(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>,time_range)
+</span></span><span style="display:flex;"><span>    path <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>zeros(time_range)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">1</span>, time_range):
+</span></span><span style="display:flex;"><span>        path[i] <span style="color:#f92672">=</span> path[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]<span style="color:#f92672">+</span>np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>normal(mean<span style="color:#f92672">*</span>time[i], sd<span style="color:#f92672">*</span>time[i])
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> time, path
+</span></span></code></pre></div><p>where time has a range from 0 to 1, because we can always scale the dates of the hypothetical stock to fit those values with an appropriate transformation. Below we see the graph of the motion</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>time_range <span style="color:#f92672">=</span> <span style="color:#ae81ff">1460</span> <span style="color:#75715e">#in days</span>
+</span></span><span style="display:flex;"><span>walk <span style="color:#f92672">=</span> brownian(time_range)
+</span></span><span style="display:flex;"><span>time <span style="color:#f92672">=</span> walk[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>stock_price <span style="color:#f92672">=</span> walk[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">+</span> np<span style="color:#f92672">.</span>abs(min(walk[<span style="color:#ae81ff">1</span>])) <span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(time, stock_price)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()
+</span></span></code></pre></div><p>Next, we define the exercise price, where here we choose a &ldquo;smooth&rdquo; deviation from the original stock price, essentially taking a stable function and adding noise, defined by a uniform distribution over an arbitrary, probably non-realistic range. Likewise, the interest rate should float between 0% and 1%, and finally the range of the time to expiration was made 1, 2, 3, 4, and 5 months.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>variance<span style="color:#f92672">=</span>np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>uniform(<span style="color:#ae81ff">0.005</span>, <span style="color:#ae81ff">0.01</span>)
+</span></span><span style="display:flex;"><span>exercise_price <span style="color:#f92672">=</span> stock_price <span style="color:#f92672">+</span> <span style="color:#ae81ff">0.1</span><span style="color:#f92672">*</span>stock_price
+</span></span><span style="display:flex;"><span>interest <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>uniform(<span style="color:#ae81ff">0.005</span>,<span style="color:#ae81ff">0.01</span>, time_range)
+</span></span><span style="display:flex;"><span>expiration_date <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span> <span style="color:#75715e">#days</span>
+</span></span><span style="display:flex;"><span>volatility <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.23</span>
+</span></span></code></pre></div><p>Finally, we can initialize the Model class, using the above as inputs and executing the call and put functions.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>option <span style="color:#f92672">=</span> Model(stock_price, exercise_price, interest, expiration_date, volatility)
+</span></span><span style="display:flex;"><span>option<span style="color:#f92672">.</span>call()
+</span></span><span style="display:flex;"><span>option<span style="color:#f92672">.</span>put()
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(stock_price)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(option<span style="color:#f92672">.</span>callval)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(option<span style="color:#f92672">.</span>putval)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend([<span style="color:#e6db74">&#39;Stock Price&#39;</span>, <span style="color:#e6db74">&#39; Call Price&#39;</span>, <span style="color:#e6db74">&#39;Put Price&#39;</span>])
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>savefig(<span style="color:#e6db74">&#39;example.png&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()
+</span></span></code></pre></div><p>Since we see that the behaviour is as expected and since we want to reuse the names of variables, we clear everything and move to Section 2. (We could just skip this step since the variables would simply get replaced, but it is easier during working to just clear everything. There were many instances where we unknowingly used variables that we didn&rsquo;t replace and were puzzled at the plots no changing etc.)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">del</span> option, stock_price, exercise_price, interest, variance, volatility, walk, time_range, time, expiration_date
+</span></span></code></pre></div><h3 id="section-2">Section 2</h3>
+<h4 id="application-using-real-world-data">Application using real-world data</h4>
+<p>Having checked that the idea works, we begin by opening the .xlsx file we wish to use and defining our parameters before initializing our class.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(<span style="color:#e6db74">&#39;ZNGA.xlsx&#39;</span>, usecols<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;Date&#39;</span>, <span style="color:#e6db74">&#39;High (in $)&#39;</span>, <span style="color:#e6db74">&#39;Low (in $)&#39;</span>, <span style="color:#e6db74">&#39;Close/Last&#39;</span>, <span style="color:#e6db74">&#39;Difference of High and Low&#39;</span>])
+</span></span><span style="display:flex;"><span>high <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;High (in $)&#39;</span>]<span style="color:#f92672">.</span>array
+</span></span><span style="display:flex;"><span>low <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;Low (in $)&#39;</span>]<span style="color:#f92672">.</span>array
+</span></span><span style="display:flex;"><span>close <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;Close/Last&#39;</span>]<span style="color:#f92672">.</span>array
+</span></span><span style="display:flex;"><span>date <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>Date<span style="color:#f92672">.</span>array
+</span></span><span style="display:flex;"><span>interest <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>uniform(<span style="color:#ae81ff">0.005</span>,<span style="color:#ae81ff">0.01</span>, len(close))
+</span></span><span style="display:flex;"><span>volatility <span style="color:#f92672">=</span> (np<span style="color:#f92672">.</span>average(high <span style="color:#f92672">-</span> low, weights <span style="color:#f92672">=</span> close))
+</span></span><span style="display:flex;"><span>expiration_date <span style="color:#f92672">=</span> <span style="color:#ae81ff">60</span>
+</span></span></code></pre></div><p>Because we want to check what happens for an exercise price both higher and lower than the original stock price (say ±10%), we create a vector containing those two values and we initialize both instances with a simple forloop</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>exercise_price <span style="color:#f92672">=</span> [close<span style="color:#f92672">-</span>(<span style="color:#ae81ff">0.1</span><span style="color:#f92672">*</span>close), close<span style="color:#f92672">+</span>(<span style="color:#ae81ff">0.1</span><span style="color:#f92672">*</span>close)]
+</span></span><span style="display:flex;"><span>option <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> change <span style="color:#f92672">in</span> exercise_price:
+</span></span><span style="display:flex;"><span>    option<span style="color:#f92672">.</span>append(Model(close, change, interest, expiration_date, volatility))
+</span></span></code></pre></div><p>Now we call the call() and put() functions for each of the instances to generate the data, which we have plotted below.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> model <span style="color:#f92672">in</span> option:
+</span></span><span style="display:flex;"><span>    model<span style="color:#f92672">.</span>call()
+</span></span><span style="display:flex;"><span>    model<span style="color:#f92672">.</span>put()
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>plot(date, close)
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>plot(date, model<span style="color:#f92672">.</span>callval)
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>plot(date, model<span style="color:#f92672">.</span>putval)
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>legend([<span style="color:#e6db74">&#39;Stock Price&#39;</span>, <span style="color:#e6db74">&#39; Call Price&#39;</span>, <span style="color:#e6db74">&#39;Put Price&#39;</span>])
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#39;time&#39;</span>)
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#39;price&#39;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> model<span style="color:#f92672">.</span>ex_p[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">&lt;</span> model<span style="color:#f92672">.</span>stock_p[<span style="color:#ae81ff">0</span>]:
+</span></span><span style="display:flex;"><span>        plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;Behaviour with a lower exercise price than stock price&#39;</span>)
+</span></span><span style="display:flex;"><span>        plt<span style="color:#f92672">.</span>savefig(<span style="color:#e6db74">&#39;lower.png&#39;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;Behaviour with higher exercise price than stock price&#39;</span>)
+</span></span><span style="display:flex;"><span>        plt<span style="color:#f92672">.</span>savefig(<span style="color:#e6db74">&#39;higher.png&#39;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>show()
+</span></span></code></pre></div><p>Finally, we use pandas to export all of the information we have gathered and created into an excel file. The model genrates the data frame of values of change in option prices which can be converted into an xlsx file which can then be
+passed onto/be communicated to a non python user for further interpretation and decision making.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>data <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> np<span style="color:#f92672">.</span>arange(len(exercise_price)):
+</span></span><span style="display:flex;"><span>        dict <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;Date&#39;</span>: date,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;Stock Price&#39;</span>: option[i]<span style="color:#f92672">.</span>stock_p,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;Exercise Price&#39;</span>: option[i]<span style="color:#f92672">.</span>ex_p,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;Interest&#39;</span>: option[i]<span style="color:#f92672">.</span>int_rate,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;Time to Expiration&#39;</span>: option[i]<span style="color:#f92672">.</span>time_to_exp,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;Volatility&#39;</span>: option[i]<span style="color:#f92672">.</span>vol,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;Call Price&#39;</span>: option[i]<span style="color:#f92672">.</span>callval,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;Put Price&#39;</span>: option[i]<span style="color:#f92672">.</span>putval}
+</span></span><span style="display:flex;"><span>        data<span style="color:#f92672">.</span>append(pd<span style="color:#f92672">.</span>DataFrame(dict, index <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>))
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> pd<span style="color:#f92672">.</span>ExcelWriter(<span style="color:#e6db74">&#39;assignment.xlsx&#39;</span>) <span style="color:#66d9ef">as</span> writer:  
+</span></span><span style="display:flex;"><span>    data[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>to_excel(writer, sheet_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Sheet 1&#39;</span>, header <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>, index <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>    data[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>to_excel(writer, sheet_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Sheet 2&#39;</span>, header <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>, index <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>time_range <span style="color:#f92672">=</span> <span style="color:#ae81ff">1460</span> <span style="color:#75715e">#in days</span>
+</span></span><span style="display:flex;"><span>walk <span style="color:#f92672">=</span> brownian(time_range)
+</span></span><span style="display:flex;"><span>time <span style="color:#f92672">=</span> walk[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>stock_price <span style="color:#f92672">=</span> walk[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">+</span> np<span style="color:#f92672">.</span>abs(min(walk[<span style="color:#ae81ff">1</span>])) <span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(time, stock_price)
+</span></span></code></pre></div><p>Next, we define the exercise price, where here we choose a &ldquo;smooth&rdquo; deviation from the original stock price, essentially taking a stable function and adding noise, defined by a uniform distribution over an arbitrary, probably non-realistic range. Likewise, the interest rate should float between 0% and 1%, and finally the range of the time to expiration was made 1, 2, 3, 4, and 5 months.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>variance<span style="color:#f92672">=</span>np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>uniform(<span style="color:#ae81ff">0.005</span>, <span style="color:#ae81ff">0.01</span>)
+</span></span><span style="display:flex;"><span>exercise_price <span style="color:#f92672">=</span> stock_price <span style="color:#f92672">+</span> <span style="color:#ae81ff">0.1</span><span style="color:#f92672">*</span>stock_price
+</span></span><span style="display:flex;"><span>interest <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>uniform(<span style="color:#ae81ff">0.005</span>,<span style="color:#ae81ff">0.01</span>, time_range)
+</span></span><span style="display:flex;"><span>expiration_date <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span> <span style="color:#75715e">#days</span>
+</span></span><span style="display:flex;"><span>volatility <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.23</span>
+</span></span></code></pre></div><p>Finally, we can initialize the Model class, using the above as inputs and executing the call and put functions.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>option <span style="color:#f92672">=</span> Model(stock_price, exercise_price, interest, expiration_date, volatility)
+</span></span><span style="display:flex;"><span>option<span style="color:#f92672">.</span>call()
+</span></span><span style="display:flex;"><span>option<span style="color:#f92672">.</span>put()
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(stock_price)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(option<span style="color:#f92672">.</span>callval)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(option<span style="color:#f92672">.</span>putval)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend([<span style="color:#e6db74">&#39;Stock Price&#39;</span>, <span style="color:#e6db74">&#39; Call Price&#39;</span>, <span style="color:#e6db74">&#39;Put Price&#39;</span>])
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>savefig(<span style="color:#e6db74">&#39;example.png&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()
+</span></span></code></pre></div><p>Since we see that the behaviour is as expected and since we want to reuse the names of variables, we clear everything and move to Section 2. (We could just skip this step since the variables would simply get replaced, but it is easier during working to just clear everything. There were many instances where we unknowingly used variables that we didn&rsquo;t replace and were puzzled at the plots no changing etc.)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">del</span> option, stock_price, exercise_price, interest, variance, volatility, walk, time_range, time, expiration_date
+</span></span></code></pre></div><h3 id="section-2-1">Section 2</h3>
+<h4 id="application-using-real-world-data-1">Application using real-world data</h4>
+<p>Having checked that the idea works, we begin by opening the .xlsx file we wish to use and defining our parameters before initializing our class.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(<span style="color:#e6db74">&#39;ZNGA.xlsx&#39;</span>, usecols<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;Date&#39;</span>, <span style="color:#e6db74">&#39;High (in $)&#39;</span>, <span style="color:#e6db74">&#39;Low (in $)&#39;</span>, <span style="color:#e6db74">&#39;Close/Last&#39;</span>, <span style="color:#e6db74">&#39;Difference of High and Low&#39;</span>])
+</span></span><span style="display:flex;"><span>high <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;High (in $)&#39;</span>]<span style="color:#f92672">.</span>array
+</span></span><span style="display:flex;"><span>low <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;Low (in $)&#39;</span>]<span style="color:#f92672">.</span>array
+</span></span><span style="display:flex;"><span>close <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;Close/Last&#39;</span>]<span style="color:#f92672">.</span>array
+</span></span><span style="display:flex;"><span>date <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>Date<span style="color:#f92672">.</span>array
+</span></span><span style="display:flex;"><span>interest <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>uniform(<span style="color:#ae81ff">0.005</span>,<span style="color:#ae81ff">0.01</span>, len(close))
+</span></span><span style="display:flex;"><span>volatility <span style="color:#f92672">=</span> (np<span style="color:#f92672">.</span>average(high <span style="color:#f92672">-</span> low, weights <span style="color:#f92672">=</span> close))
+</span></span><span style="display:flex;"><span>expiration_date <span style="color:#f92672">=</span> <span style="color:#ae81ff">60</span>
+</span></span></code></pre></div><p>Because we want to check what happens for an exercise price both higher and lower than the original stock price (say ±10%), we create a vector containing those two values and we initialize both instances with a simple forloop</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>exercise_price <span style="color:#f92672">=</span> [close<span style="color:#f92672">-</span>(<span style="color:#ae81ff">0.1</span><span style="color:#f92672">*</span>close), close<span style="color:#f92672">+</span>(<span style="color:#ae81ff">0.1</span><span style="color:#f92672">*</span>close)]
+</span></span><span style="display:flex;"><span>option <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> change <span style="color:#f92672">in</span> exercise_price:
+</span></span><span style="display:flex;"><span>    option<span style="color:#f92672">.</span>append(Model(close, change, interest, expiration_date, volatility))
+</span></span></code></pre></div><p>Now we call the call() and put() functions for each of the instances to generate the data, which we have plotted below.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> model <span style="color:#f92672">in</span> option:
+</span></span><span style="display:flex;"><span>    model<span style="color:#f92672">.</span>call()
+</span></span><span style="display:flex;"><span>    model<span style="color:#f92672">.</span>put()
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>plot(date, close)
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>plot(date, model<span style="color:#f92672">.</span>callval)
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>plot(date, model<span style="color:#f92672">.</span>putval)
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>legend([<span style="color:#e6db74">&#39;Stock Price&#39;</span>, <span style="color:#e6db74">&#39; Call Price&#39;</span>, <span style="color:#e6db74">&#39;Put Price&#39;</span>])
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#39;time&#39;</span>)
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#39;price&#39;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> model<span style="color:#f92672">.</span>ex_p[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">&lt;</span> model<span style="color:#f92672">.</span>stock_p[<span style="color:#ae81ff">0</span>]:
+</span></span><span style="display:flex;"><span>        plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;Behaviour with a lower exercise price than stock price&#39;</span>)
+</span></span><span style="display:flex;"><span>        plt<span style="color:#f92672">.</span>savefig(<span style="color:#e6db74">&#39;lower.png&#39;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;Behaviour with higher exercise price than stock price&#39;</span>)
+</span></span><span style="display:flex;"><span>        plt<span style="color:#f92672">.</span>savefig(<span style="color:#e6db74">&#39;higher.png&#39;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>show()
+</span></span></code></pre></div><p>Finally, we use pandas to export all of the information we have gathered and created into an excel file. The model genrates the data frame of values of change in option prices which can be converted into an xlsx file which can then be
+passed onto/be communicated to a non python user for further interpretation and decision making.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>data <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> np<span style="color:#f92672">.</span>arange(len(exercise_price)):
+</span></span><span style="display:flex;"><span>        dict <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;Date&#39;</span>: date,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;Stock Price&#39;</span>: option[i]<span style="color:#f92672">.</span>stock_p,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;Exercise Price&#39;</span>: option[i]<span style="color:#f92672">.</span>ex_p,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;Interest&#39;</span>: option[i]<span style="color:#f92672">.</span>int_rate,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;Time to Expiration&#39;</span>: option[i]<span style="color:#f92672">.</span>time_to_exp,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;Volatility&#39;</span>: option[i]<span style="color:#f92672">.</span>vol,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;Call Price&#39;</span>: option[i]<span style="color:#f92672">.</span>callval,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;Put Price&#39;</span>: option[i]<span style="color:#f92672">.</span>putval}
+</span></span><span style="display:flex;"><span>        data<span style="color:#f92672">.</span>append(pd<span style="color:#f92672">.</span>DataFrame(dict, index <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>))
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> pd<span style="color:#f92672">.</span>ExcelWriter(<span style="color:#e6db74">&#39;assignment.xlsx&#39;</span>) <span style="color:#66d9ef">as</span> writer:  
+</span></span><span style="display:flex;"><span>    data[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>to_excel(writer, sheet_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Sheet 1&#39;</span>, header <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>, index <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>    data[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>to_excel(writer, sheet_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Sheet 2&#39;</span>, header <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>, index <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>)
+</span></span></code></pre></div>
+                                </article>
+                            
+                        
+                    
+                        
+                            
+                                <article id="human-diffusion">
+                                    <h2 class="major">Human-Diffusion</h2>
+                                    <span class="image main"><img src="" alt="" /></span>
+                                    <p>You can find the repository <a href="https://github.com/baledick/Human-Diffusion">here</a></p>
+<h1 id="human-diffusion">Human Diffusion</h1>
+<h3 id="a-q-learning-process-about-the-human-migration-from-africa">A Q-Learning Process About The Human Migration From Africa</h3>
+<p>We start by importing the proper modules (equivalent to libraries in R).</p>
+<p>These are</p>
+<ul>
+<li>NumPy</li>
+<li>MatPlotLib</li>
+<li>Pandas</li>
+<li>PIL, (Pillow) an image handler</li>
+<li>tqdm, (pronounced ta-qa-dum) from Arabic (taqadum, تقدّم) meaning <em>progress</em>, is a simple progress bar to be able to estimate the time for each task</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">#pip install -r requirements.txt</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> earth <span style="color:#f92672">import</span> Earth
+</span></span></code></pre></div><h2 id="generating-the-map">Generating the Map</h2>
+<p>We initialise the picture that we want to use, and convert it into pixel values, so we can have a pure black and white image of the earth to use.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>stage <span style="color:#f92672">=</span> Earth()
+</span></span></code></pre></div><p>The following forloop checks each individual pixel and the converts it to black or white. The threshold was found through running the loop many times and picking a number that looked good enough.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>stage<span style="color:#f92672">.</span>black_and_white(<span style="color:#e6db74">&#39;earth.jpg&#39;</span>, <span style="color:#e6db74">&#39;newPixels.csv&#39;</span>, <span style="color:#e6db74">&#39;pure-bw-earth.jpg&#39;</span>)
+</span></span></code></pre></div><p>We then generate the new picture and save it before we convert it into an array.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>stage<span style="color:#f92672">.</span>generate_image(<span style="color:#e6db74">&#39;pure-bw-earth.jpg&#39;</span>)
+</span></span></code></pre></div><p>We are now ready to create the map we will need.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>stage<span style="color:#f92672">.</span>plot(<span style="color:#e6db74">&#39;map.jpg&#39;</span>)
+</span></span></code></pre></div><p>Now that we have our map ready, we can move on to the implementation of the algorithm.</p>
+<h2 id="application-of-the-q-learning-algorithm">Application of the Q-Learning Algorithm</h2>
+<p>We import the necessary libraries</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> tqdm <span style="color:#f92672">import</span> tqdm
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>seed(<span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><p>and define the actions that the agent is able to perform</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>actions <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;west&#39;</span>, <span style="color:#e6db74">&#39;east&#39;</span>, <span style="color:#e6db74">&#39;north&#39;</span>, <span style="color:#e6db74">&#39;south&#39;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#coded to 0, 1, 2, 3</span>
+</span></span></code></pre></div><p>Then we can generate the Q-map, which gives the rewards.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>q_values <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>uniform(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, size<span style="color:#f92672">=</span>(stage<span style="color:#f92672">.</span>height,stage<span style="color:#f92672">.</span>width, len(actions)))
+</span></span></code></pre></div><p>After, we define the functions that we will use, namely tone to generate our starting position, one for the agent to take action either randomly or by checking the Q-table, and one to define the result of the action taken.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">starting_area</span>(column, row):
+</span></span><span style="display:flex;"><span>    col <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>randint(column[<span style="color:#ae81ff">0</span>], column[<span style="color:#ae81ff">1</span>])
+</span></span><span style="display:flex;"><span>    row <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>randint(row[<span style="color:#ae81ff">0</span>], row[<span style="color:#ae81ff">1</span>])
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> col, row
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">next_action</span>(current_height, current_width, epsilon):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>random() <span style="color:#f92672">&lt;</span> epsilon:
+</span></span><span style="display:flex;"><span>        move <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>argmax(q_values[current_height, current_width])
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        move <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">4</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> move
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">next_location</span>(height, width, action):
+</span></span><span style="display:flex;"><span>    new_width <span style="color:#f92672">=</span> width
+</span></span><span style="display:flex;"><span>    new_height <span style="color:#f92672">=</span> height
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> actions[action] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;west&#39;</span> <span style="color:#f92672">and</span> width <span style="color:#f92672">&gt;</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>        new_width <span style="color:#f92672">=</span> width <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> actions[action] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;east&#39;</span> <span style="color:#f92672">and</span> width <span style="color:#f92672">&lt;</span> stage<span style="color:#f92672">.</span>width <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>        new_width <span style="color:#f92672">=</span> width <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> actions[action] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;north&#39;</span> <span style="color:#f92672">and</span> height <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>        new_height <span style="color:#f92672">=</span> height <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> actions[action] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;south&#39;</span> <span style="color:#f92672">and</span> height <span style="color:#f92672">&lt;</span> stage<span style="color:#f92672">.</span>height:
+</span></span><span style="display:flex;"><span>        new_height <span style="color:#f92672">=</span> height <span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>   
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> new_height, new_width
+</span></span><span style="display:flex;"><span>            
+</span></span></code></pre></div><p>Now we are ready to run the algorithm for the number of episodes we need</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>reward_map <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>zeros(shape<span style="color:#f92672">=</span>(stage<span style="color:#f92672">.</span>height,stage<span style="color:#f92672">.</span>width))
+</span></span><span style="display:flex;"><span>reward_map[np<span style="color:#f92672">.</span>where(stage<span style="color:#f92672">.</span>map <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>)] <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>reward_map[:<span style="color:#ae81ff">10</span>, :] <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">15</span>
+</span></span><span style="display:flex;"><span>reward_map[<span style="color:#ae81ff">610</span>:, :] <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">15</span>
+</span></span><span style="display:flex;"><span>reward_map[:, <span style="color:#ae81ff">720</span>:] <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">15</span>
+</span></span><span style="display:flex;"><span>reward_map[:, :<span style="color:#ae81ff">10</span>] <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">15</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Arabian bridge</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Gulf of Aden</span>
+</span></span><span style="display:flex;"><span>reward_map[<span style="color:#ae81ff">350</span>:<span style="color:#ae81ff">388</span>, <span style="color:#ae81ff">250</span>:<span style="color:#ae81ff">282</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Hormuz</span>
+</span></span><span style="display:flex;"><span>reward_map[<span style="color:#ae81ff">300</span>:<span style="color:#ae81ff">340</span>, <span style="color:#ae81ff">290</span>:<span style="color:#ae81ff">315</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Indonesian bridge</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Sumatra</span>
+</span></span><span style="display:flex;"><span>reward_map[<span style="color:#ae81ff">417</span>:<span style="color:#ae81ff">433</span>, <span style="color:#ae81ff">485</span>:<span style="color:#ae81ff">495</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Java</span>
+</span></span><span style="display:flex;"><span>reward_map[<span style="color:#ae81ff">450</span>:<span style="color:#ae81ff">455</span>, <span style="color:#ae81ff">495</span>:<span style="color:#ae81ff">505</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Brunei</span>
+</span></span><span style="display:flex;"><span>reward_map[<span style="color:#ae81ff">430</span>:<span style="color:#ae81ff">465</span>, <span style="color:#ae81ff">525</span>:<span style="color:#ae81ff">530</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># New Guinea</span>
+</span></span><span style="display:flex;"><span>reward_map[<span style="color:#ae81ff">460</span>:<span style="color:#ae81ff">465</span>, <span style="color:#ae81ff">525</span>:<span style="color:#ae81ff">645</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Australia</span>
+</span></span><span style="display:flex;"><span>reward_map[<span style="color:#ae81ff">460</span>:<span style="color:#ae81ff">505</span>, <span style="color:#ae81ff">525</span>:<span style="color:#ae81ff">605</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Bering Straight</span>
+</span></span><span style="display:flex;"><span>reward_map[<span style="color:#ae81ff">30</span>:<span style="color:#ae81ff">60</span>, <span style="color:#ae81ff">580</span>:<span style="color:#ae81ff">610</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Australia</span>
+</span></span><span style="display:flex;"><span>reward_map[<span style="color:#ae81ff">510</span>:<span style="color:#ae81ff">540</span>, <span style="color:#ae81ff">580</span>:<span style="color:#ae81ff">610</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>real_map <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>ones(shape<span style="color:#f92672">=</span>(stage<span style="color:#f92672">.</span>height,stage<span style="color:#f92672">.</span>width))<span style="color:#f92672">*</span><span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>real_map[np<span style="color:#f92672">.</span>where(stage<span style="color:#f92672">.</span>map <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>)] <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>timeline <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">5000</span>)
+</span></span><span style="display:flex;"><span>episodes <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">200000</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>reward_per_episode <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>zeros(len(episodes))
+</span></span><span style="display:flex;"><span>lifetime <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>zeros(len(episodes))
+</span></span><span style="display:flex;"><span>ims <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> episode <span style="color:#f92672">in</span> tqdm(episodes): <span style="color:#75715e">#30k</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    epsilon <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.7</span>
+</span></span><span style="display:flex;"><span>    discount_factor <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.3</span>
+</span></span><span style="display:flex;"><span>    learning_rate <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    rewards <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>zeros(len(timeline))
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> episode <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">195000</span>: <span style="color:#75715e"># This statement is the way we destabilise the system to get more natural motion</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># India</span>
+</span></span><span style="display:flex;"><span>        reward_map[<span style="color:#ae81ff">390</span>, <span style="color:#ae81ff">388</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>      
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># New Guinea Papua</span>
+</span></span><span style="display:flex;"><span>        reward_map[<span style="color:#ae81ff">455</span>, <span style="color:#ae81ff">650</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Brunei</span>
+</span></span><span style="display:flex;"><span>        reward_map[<span style="color:#ae81ff">425</span>, <span style="color:#ae81ff">540</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#Australia</span>
+</span></span><span style="display:flex;"><span>        reward_map[<span style="color:#ae81ff">510</span>:<span style="color:#ae81ff">540</span>, <span style="color:#ae81ff">580</span>:<span style="color:#ae81ff">610</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    old_height, old_width <span style="color:#f92672">=</span> <span style="color:#ae81ff">400</span>, <span style="color:#ae81ff">230</span>
+</span></span><span style="display:flex;"><span>    height, width <span style="color:#f92672">=</span> starting_area([old_height<span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>, old_height<span style="color:#f92672">+</span><span style="color:#ae81ff">5</span>], [old_width<span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>, old_width<span style="color:#f92672">+</span><span style="color:#ae81ff">5</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> year <span style="color:#f92672">in</span> timeline:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            action <span style="color:#f92672">=</span> next_action(height, width, epsilon)
+</span></span><span style="display:flex;"><span>            old_height, old_width <span style="color:#f92672">=</span> height, width
+</span></span><span style="display:flex;"><span>            height, width <span style="color:#f92672">=</span> next_location(height, width, action)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            reward <span style="color:#f92672">=</span> reward_map[height, width]
+</span></span><span style="display:flex;"><span>            rewards[year] <span style="color:#f92672">=</span> reward
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            old_q_value <span style="color:#f92672">=</span> q_values[old_height, old_width, action]
+</span></span><span style="display:flex;"><span>            temporal_difference <span style="color:#f92672">=</span> reward <span style="color:#f92672">+</span> (discount_factor<span style="color:#f92672">*</span>np<span style="color:#f92672">.</span>max(q_values[height, width])) <span style="color:#f92672">-</span> old_q_value
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            new_q_value <span style="color:#f92672">=</span> old_q_value <span style="color:#f92672">+</span> (learning_rate <span style="color:#f92672">*</span> temporal_difference)
+</span></span><span style="display:flex;"><span>            q_values[old_height, old_width, action] <span style="color:#f92672">=</span> new_q_value                
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> reward_map[old_height, old_width] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>                reward_map[old_height, old_width] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            real_map[old_height, old_width] <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">IndexError</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> year <span style="color:#f92672">==</span> timeline[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]:
+</span></span><span style="display:flex;"><span>            lifetime[episode] <span style="color:#f92672">=</span> year
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> reward_map[old_height, old_width] <span style="color:#f92672">&lt;=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">10</span> <span style="color:#f92672">and</span> reward_map[height, width] <span style="color:#f92672">&lt;=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">10</span>:
+</span></span><span style="display:flex;"><span>            lifetime[episode] <span style="color:#f92672">=</span> year
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>            
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    reward_per_episode[episode] <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>mean(rewards)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> reward_map[<span style="color:#ae81ff">510</span>:<span style="color:#ae81ff">540</span>, <span style="color:#ae81ff">580</span>:<span style="color:#ae81ff">610</span>]<span style="color:#f92672">.</span>all() <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#Australia</span>
+</span></span><span style="display:flex;"><span>        reward_map[<span style="color:#ae81ff">510</span>:<span style="color:#ae81ff">540</span>, <span style="color:#ae81ff">580</span>:<span style="color:#ae81ff">610</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> reward_map[<span style="color:#ae81ff">30</span>:<span style="color:#ae81ff">60</span>, <span style="color:#ae81ff">580</span>:<span style="color:#ae81ff">610</span>]<span style="color:#f92672">.</span>all() <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Bering Straight</span>
+</span></span><span style="display:flex;"><span>        reward_map[<span style="color:#ae81ff">30</span>:<span style="color:#ae81ff">60</span>, <span style="color:#ae81ff">580</span>:<span style="color:#ae81ff">610</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>figure(figsize <span style="color:#f92672">=</span> (<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">10</span>))
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#39;Latitude&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#39;Logntitude&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xticks([])
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>yticks([])
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>imshow(real_map, cmap <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;ocean_r&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()
+</span></span></code></pre></div>
+                                </article>
+                            
+                        
+                    
+
+                </div>
+
+                
+<footer id="footer">
+    <p>
+        <a href="https://github.com/baledick" class="site-link">
+                <i class="fab fa-github" style="color:white">
+                </i>
+        </a>
+        &nbsp;&nbsp;
+        <a href=" https://www.youtube.com/@vasilisvalatsos" class="site-link">
+                <i class="fab fa-youtube" style="color:white"></i>
+        </a>
+        &nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/vasilis-valatsos" class="site-link">
+                <i class="fab fa-linkedin" style="color:white">
+                </i>
+        </a>
+        </p>
+</footer>
+
+
+        </div>
+
+    
+    <div id="bg"></div>
+
+</body>
+
+
+    
+    <script src=https://baledick.github.io/assets/js/jquery.min.js></script>
+    <script src=https://baledick.github.io/assets/js/browser.min.js></script>
+    <script src=https://baledick.github.io/assets/js/breakpoints.min.js></script>
+    <script src=https://baledick.github.io/assets/js/util.js></script>
+    <script src=https://baledick.github.io/assets/js/main.js></script>
+
+</html>

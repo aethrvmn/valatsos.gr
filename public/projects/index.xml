@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Vasilis Valatsos</title>
-    <link>https://baledick.github.io/projects/</link>
+    <link>https://www.valatsos.gr/projects/</link>
     <description>Recent content in Projects on Vasilis Valatsos</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://baledick.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://www.valatsos.gr/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bachelor-Thesis</title>
-      <link>https://baledick.github.io/projects/thesis/</link>
+      <link>https://www.valatsos.gr/projects/thesis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://baledick.github.io/projects/thesis/</guid>
+      <guid>https://www.valatsos.gr/projects/thesis/</guid>
       <description>You can find the thesis here and the code here
 The One–Dimensional Heisenberg Model, RG Methods and Numerical Simulation of the SDRG Process Abstract The Strong Disorder Renormalisation Group (SDRG) method, first introduced by Dasgupta, Ma and Hu, and later greatly expanded by Fisher, yields asymptotically exact results in distributions where the disorder grows without limit in large scales, whilst Fisher also calculated limit values as well as scaling factors for random spin chains.</description>
     </item>
     
     <item>
       <title>Black-Schols</title>
-      <link>https://baledick.github.io/projects/black-schoels/</link>
+      <link>https://www.valatsos.gr/projects/black-schoels/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://baledick.github.io/projects/black-schoels/</guid>
+      <guid>https://www.valatsos.gr/projects/black-schoels/</guid>
       <description>You can find the repository here
 Black Scholes Model Amandeep Singh, Vasilis Valatsos
 We attempt to make a program that predicts optional premiums, using the Black-Scholes model, introduced in 1973.
@@ -31,10 +31,10 @@ To start off, we first install all the required modules, (We have the cell comme
     
     <item>
       <title>Human-Diffusion</title>
-      <link>https://baledick.github.io/projects/human-diffusion/</link>
+      <link>https://www.valatsos.gr/projects/human-diffusion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://baledick.github.io/projects/human-diffusion/</guid>
+      <guid>https://www.valatsos.gr/projects/human-diffusion/</guid>
       <description>You can find the repository here
 Human Diffusion A Q-Learning Process About The Human Migration From Africa We start by importing the proper modules (equivalent to libraries in R).
 These are

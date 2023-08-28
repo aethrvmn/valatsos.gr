@@ -1,50 +1,8 @@
 ---
 title: "Black-Schols"
-draft: false
 ---
 
 You can find the repository [here](https://github.com/baledick/Black-Scholes-Model)
-# Black Scholes Model
-
-**Amandeep Singh, Vasilis Valatsos**
-
-We attempt to make a program that predicts optional premiums, using the Black-Scholes model, introduced in 1973.
-
-To start off, we first install all the required modules, (We have the cell commented, but in the case that one or more modules aren't installed, uncomment and run once the cell below.)
-
-
-```python
-# pip install -r "requirements.txt"
-```
-
-where the module scipy.stats is not imported here but is needed in the class that we import.
-
-
-```python
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-from BlackScholes import Model
-```
-
-### Section 1
-
-#### Testing
-
-To check whether the class functions work, as well as to explain the process, we can create a Brownian motion to simulate a possilbe stock price over four years (1460 days) and calculate all the needed variables.
-
-
-```python
-def brownian(time_range, mean=0, sd=1):
-    time = np.linspace(0,1,time_range)
-    path = np.zeros(time_range)
-    for i in np.arange(1, time_range):
-        path[i] = path[i-1]+np.random.normal(mean*time[i], sd*time[i])
-    
-    return time, path
-```
-
-where time has a range from 0 to 1, because we can always scale the dates of the hypothetical stock to fit those values with an appropriate transformation. Below we see the graph of the motion
 
 # Black Scholes Model
 

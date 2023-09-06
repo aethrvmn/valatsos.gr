@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.valatsos.gr/about/</guid>
-      <description>My name is Vasilis Valatsos, I come from Athens, Greece and I currently work as a Database Manager at Students For Liberty.
+      <description>My name is Vasilis Valatsos, I come from Athens, Greece and I currently work as an Alumni Data Manager at Students For Liberty.
 I have a Bachelors degree in Physics from the National and Kapodistrian University of Athens and am now studing at the University of Torino Stochastics and Data Science.
 You can find my full CV here
 Contact You can find me in my email address
@@ -52,6 +52,25 @@ To start off, we first install all the required modules, (We have the cell comme
 Human Diffusion A Q-Learning Process About The Human Migration From Africa We start by importing the proper modules (equivalent to libraries in R).
 These are
 NumPy MatPlotLib Pandas PIL, (Pillow) an image handler tqdm, (pronounced ta-qa-dum) from Arabic (taqadum, تقدّم) meaning progress, is a simple progress bar to be able to estimate the time for each task #pip install -r requirements.txt from earth import Earth Generating the Map We initialise the picture that we want to use, and convert it into pixel values, so we can have a pure black and white image of the earth to use.</description>
+    </item>
+    
+    <item>
+      <title>Liberal-gr</title>
+      <link>https://www.valatsos.gr/rss-feeds/liberal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.valatsos.gr/rss-feeds/liberal/</guid>
+      <description>Liberal.gr Liberal.gr is a Greek center-right liberal media outlet. You can find the RSS feed for different categories, simply copy and paste it to your RSS reader of choice.
+Economics https://valatsos.gr/rss/liberal.gr/oikonomia.xml Politics https://valatsos.gr/rss/liberal.gr/politiki.xml Opinions https://valatsos.gr/rss/liberal.gr/apopsi.xml Markets https://valatsos.gr/rss/liberal.gr/agores.xml Technology https://valatsos.gr/rss/liberal.gr/tehnologia.xml International Matters https://valatsos.gr/rss/liberal.gr/diethni-themata.xml Cars https://valatsos.gr/rss/liberal.gr/aytokinita.xml All the articles are in Greek.</description>
+    </item>
+    
+    <item>
+      <title>README</title>
+      <link>https://www.valatsos.gr/rss-feeds/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.valatsos.gr/rss-feeds/about/</guid>
+      <description>Greek News RSS Feed Generator In today&amp;rsquo;s media landscape, navigating through the barrage of news articles, overwhelming advertising, and revenue-driven news aggregation apps has become an arduous task. The purity of information is at times compromised, making it harder for readers to keep up with genuine content. Worse yet, some media outlets have ceased supporting RSS, a tool that once revolutionized content consumption by delivering news straight to readers without the fluff.</description>
     </item>
     
   </channel>

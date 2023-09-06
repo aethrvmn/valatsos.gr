@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Greek News RSS on Vasilis Valatsos</title>
+    <link>https://www.valatsos.gr/rss-feeds/</link>
+    <description>Recent content in Greek News RSS on Vasilis Valatsos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.valatsos.gr/rss-feeds/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Liberal-gr</title>
+      <link>https://www.valatsos.gr/rss-feeds/liberal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.valatsos.gr/rss-feeds/liberal/</guid>
+      <description>Liberal.gr Liberal.gr is a Greek center-right liberal media outlet. You can find the RSS feed for different categories, simply copy and paste it to your RSS reader of choice.
+Economics https://valatsos.gr/rss/liberal.gr/oikonomia.xml Politics https://valatsos.gr/rss/liberal.gr/politiki.xml Opinions https://valatsos.gr/rss/liberal.gr/apopsi.xml Markets https://valatsos.gr/rss/liberal.gr/agores.xml Technology https://valatsos.gr/rss/liberal.gr/tehnologia.xml International Matters https://valatsos.gr/rss/liberal.gr/diethni-themata.xml Cars https://valatsos.gr/rss/liberal.gr/aytokinita.xml All the articles are in Greek.</description>
+    </item>
+    
+    <item>
+      <title>README</title>
+      <link>https://www.valatsos.gr/rss-feeds/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.valatsos.gr/rss-feeds/about/</guid>
+      <description>Greek News RSS Feed Generator In today&amp;rsquo;s media landscape, navigating through the barrage of news articles, overwhelming advertising, and revenue-driven news aggregation apps has become an arduous task. The purity of information is at times compromised, making it harder for readers to keep up with genuine content. Worse yet, some media outlets have ceased supporting RSS, a tool that once revolutionized content consumption by delivering news straight to readers without the fluff.</description>
+    </item>
+    
+  </channel>
+</rss>

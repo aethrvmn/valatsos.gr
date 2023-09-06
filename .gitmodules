@@ -1,0 +1,3 @@
+[submodule "rss-gen"]
+	path = rss-gen
+	url = https://github.com/baledick/greek-news-rss-feeds.git

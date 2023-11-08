@@ -41,10 +41,4 @@ https://valatsos.gr/rss/liberal.gr/tehnologia.xml
 https://valatsos.gr/rss/liberal.gr/diethni-themata.xml
 ```
 
-## Cars
-
-```url
-https://valatsos.gr/rss/liberal.gr/aytokinita.xml
-```
-
 All the articles are in Greek.

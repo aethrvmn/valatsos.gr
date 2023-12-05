@@ -1,9 +1,7 @@
 ---
 title: Liberal-gr
 ---
-# Liberal.gr
-
-[Liberal.gr](liberal.gr) is a Greek center-right liberal media outlet. You can find the RSS feed for different categories, simply copy and paste it to your RSS reader of choice.  
+[Liberal.gr](https://liberal.gr) is a Greek center-right liberal media outlet. You can find the RSS feed for different categories, simply copy and paste it to your RSS reader of choice.  
 
 ## Economics
 

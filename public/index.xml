@@ -2,76 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vasilis Valatsos</title>
-    <link>https://www.valatsos.gr/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Vasilis Valatsos</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://www.valatsos.gr/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Me</title>
-      <link>https://www.valatsos.gr/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.valatsos.gr/about/</guid>
-      <description>My name is Vasilis Valatsos, I come from Athens, Greece and I currently work as an Alumni Data Manager at Students For Liberty.
-I have a Bachelors degree in Physics from the National and Kapodistrian University of Athens and am now studing at the University of Torino Stochastics and Data Science.
-You can find my full CV here
-Contact You can find me in my email address
-vasilvalat@gmail.com</description>
+      <guid>http://localhost:1313/about/</guid>
+      <description>My name is Vasilis Valatsos from Athens, Greece.&#xA;I have a Bachelors degree in Physics from the National and Kapodistrian University of Athens and am now studing at the University of Torino Stochastics and Data Science.&#xA;You can find my full CV here&#xA;Contact You can find me in my email address&#xA;vasilvalat@gmail.com</description>
     </item>
-    
     <item>
       <title>Bachelor-Thesis</title>
-      <link>https://www.valatsos.gr/projects/thesis/</link>
+      <link>http://localhost:1313/projects/thesis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.valatsos.gr/projects/thesis/</guid>
-      <description>You can find the thesis here and the code here
-The One–Dimensional Heisenberg Model, RG Methods and Numerical Simulation of the SDRG Process Abstract The Strong Disorder Renormalisation Group (SDRG) method, first introduced by Dasgupta, Ma and Hu, and later greatly expanded by Fisher, yields asymptotically exact results in distributions where the disorder grows without limit in large scales, whilst Fisher also calculated limit values as well as scaling factors for random spin chains.</description>
+      <guid>http://localhost:1313/projects/thesis/</guid>
+      <description>You can find the thesis here and the code here&#xA;The One–Dimensional Heisenberg Model, RG Methods and Numerical Simulation of the SDRG Process Abstract The Strong Disorder Renormalisation Group (SDRG) method, first introduced by Dasgupta, Ma and Hu, and later greatly expanded by Fisher, yields asymptotically exact results in distributions where the disorder grows without limit in large scales, whilst Fisher also calculated limit values as well as scaling factors for random spin chains.</description>
     </item>
-    
     <item>
       <title>Black-Schols</title>
-      <link>https://www.valatsos.gr/projects/black-schoels/</link>
+      <link>http://localhost:1313/projects/black-schoels/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.valatsos.gr/projects/black-schoels/</guid>
-      <description>You can find the repository here
-Black Scholes Model Amandeep Singh, Vasilis Valatsos
-We attempt to make a program that predicts optional premiums, using the Black-Scholes model, introduced in 1973.
-To start off, we first install all the required modules, (We have the cell commented, but in the case that one or more modules aren&amp;rsquo;t installed, uncomment and run once the cell below.)
-# pip install -r &amp;#34;requirements.txt&amp;#34; where the module scipy.</description>
+      <guid>http://localhost:1313/projects/black-schoels/</guid>
+      <description>You can find the repository here&#xA;Black Scholes Model Amandeep Singh, Vasilis Valatsos&#xA;We attempt to make a program that predicts optional premiums, using the Black-Scholes model, introduced in 1973.&#xA;To start off, we first install all the required modules, (We have the cell commented, but in the case that one or more modules aren&amp;rsquo;t installed, uncomment and run once the cell below.)&#xA;# pip install -r &amp;#34;requirements.txt&amp;#34; where the module scipy.</description>
     </item>
-    
     <item>
       <title>Human-Diffusion</title>
-      <link>https://www.valatsos.gr/projects/human-diffusion/</link>
+      <link>http://localhost:1313/projects/human-diffusion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.valatsos.gr/projects/human-diffusion/</guid>
-      <description>You can find the repository here
-Human Diffusion A Q-Learning Process About The Human Migration From Africa We start by importing the proper modules (equivalent to libraries in R).
-These are
-NumPy MatPlotLib Pandas PIL, (Pillow) an image handler tqdm, (pronounced ta-qa-dum) from Arabic (taqadum, تقدّم) meaning progress, is a simple progress bar to be able to estimate the time for each task #pip install -r requirements.txt from earth import Earth Generating the Map We initialise the picture that we want to use, and convert it into pixel values, so we can have a pure black and white image of the earth to use.</description>
+      <guid>http://localhost:1313/projects/human-diffusion/</guid>
+      <description>You can find the repository here&#xA;Human Diffusion A Q-Learning Process About The Human Migration From Africa We start by importing the proper modules (equivalent to libraries in R).&#xA;These are&#xA;NumPy MatPlotLib Pandas PIL, (Pillow) an image handler tqdm, (pronounced ta-qa-dum) from Arabic (taqadum, تقدّم) meaning progress, is a simple progress bar to be able to estimate the time for each task #pip install -r requirements.txt from earth import Earth Generating the Map We initialise the picture that we want to use, and convert it into pixel values, so we can have a pure black and white image of the earth to use.</description>
     </item>
-    
     <item>
       <title>Liberal-gr</title>
-      <link>https://www.valatsos.gr/rss-feeds/liberal/</link>
+      <link>http://localhost:1313/rss-feeds/liberal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.valatsos.gr/rss-feeds/liberal/</guid>
-      <description>Liberal.gr is a Greek center-right liberal media outlet. You can find the RSS feed for different categories, simply copy and paste it to your RSS reader of choice.
-Economics https://valatsos.gr/rss/liberal.gr/oikonomia.xml Politics https://valatsos.gr/rss/liberal.gr/politiki.xml Opinions https://valatsos.gr/rss/liberal.gr/apopsi.xml Markets https://valatsos.gr/rss/liberal.gr/agores.xml Technology https://valatsos.gr/rss/liberal.gr/tehnologia.xml International Matters https://valatsos.gr/rss/liberal.gr/diethni-themata.xml All the articles are in Greek.</description>
+      <guid>http://localhost:1313/rss-feeds/liberal/</guid>
+      <description>Liberal.gr is a Greek center-right liberal media outlet. You can find the RSS feed for different categories, simply copy and paste it to your RSS reader of choice.&#xA;Economics https://valatsos.gr/rss/liberal.gr/oikonomia.xml Politics https://valatsos.gr/rss/liberal.gr/politiki.xml Opinions https://valatsos.gr/rss/liberal.gr/apopsi.xml Markets https://valatsos.gr/rss/liberal.gr/agores.xml Technology https://valatsos.gr/rss/liberal.gr/tehnologia.xml International Matters https://valatsos.gr/rss/liberal.gr/diethni-themata.xml All the articles are in Greek.</description>
     </item>
-    
     <item>
       <title>README</title>
-      <link>https://www.valatsos.gr/rss-feeds/about/</link>
+      <link>http://localhost:1313/rss-feeds/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.valatsos.gr/rss-feeds/about/</guid>
+      <guid>http://localhost:1313/rss-feeds/about/</guid>
       <description>Greek News RSS Feed Generator In today&amp;rsquo;s media landscape, navigating through the barrage of news articles, overwhelming advertising, and revenue-driven news aggregation apps has become an arduous task. The purity of information is at times compromised, making it harder for readers to keep up with genuine content. Worse yet, some media outlets have ceased supporting RSS, a tool that once revolutionized content consumption by delivering news straight to readers without the fluff.</description>
     </item>
-    
   </channel>
 </rss>

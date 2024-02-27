@@ -1,7 +1,7 @@
 ---
 title: About Me
 ---
-My name is Vasilis Valatsos, I come from Athens, Greece and I currently work as an Alumni Data Manager at [Students For Liberty](https://studentsforliberty.org).
+My name is Vasilis Valatsos from Athens, Greece.
 
 I have a Bachelors degree in Physics from the [National and Kapodistrian University of Athens](https://www.phys.uoa.gr) and am now studing at the [University of Torino](https://www.unito.it) Stochastics and Data Science.
 

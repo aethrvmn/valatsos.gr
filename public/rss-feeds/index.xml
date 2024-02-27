@@ -5,7 +5,7 @@
     <link>http://localhost:1313/rss-feeds/</link>
     <description>Recent content in Greek News RSS on Vasilis Valatsos</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <atom:link href="http://localhost:1313/rss-feeds/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Liberal-gr</title>

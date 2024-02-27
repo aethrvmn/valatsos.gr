@@ -1,15 +1,14 @@
 ---
-title: "Human-Diffusion"
-draft: false
+type: "page"
+showTableOfContents: true
 ---
+
+# Human Diffusion
 
 
 You can find the repository [here](https://github.com/baledick/Human-Diffusion)
 
-
-# Human Diffusion
-
-### A Q-Learning Process About The Human Migration From Africa
+## A Q-Learning Process About The Human Migration From Africa
 
 We start by importing the proper modules (equivalent to libraries in R).
 
@@ -33,7 +32,7 @@ These are
 from earth import Earth
 ```
 
-## Generating the Map
+### Generating the Map
 We initialise the picture that we want to use, and convert it into pixel values, so we can have a pure black and white image of the earth to use.
 
 
@@ -64,7 +63,7 @@ stage.plot('map.jpg')
 
 Now that we have our map ready, we can move on to the implementation of the algorithm.
 
-## Application of the Q-Learning Algorithm
+### Application of the Q-Learning Algorithm
 
 We import the necessary libraries
 

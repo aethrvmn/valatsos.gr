@@ -1,54 +1,382 @@
 <!DOCTYPE html>
-<html>
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <title>Human-Diffusion</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="http://localhost:1313/assets/css/main.css"/>
-    <link rel="canonical" href="http://localhost:1313/projects/human-diffusion/">
-    <noscript><link rel="stylesheet" href="http://localhost:1313/assets/css/noscript.css"/></noscript>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <style>
-        :root{--site-background : url("http://localhost:1313/images/bg.jpg")};
-    </style> 
+        :root {
+            --accent-color: #1b9470;
+        }
+    </style>
+
     
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    
+    
+    
+    
+    
+
+    
+    <title>Vasilis Valatsos</title>
+    <meta name="description" content="Database Management &amp;&amp; Machine Learning">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/projects/human-diffusion/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vasilis Valatsos">
+    <meta property="og:description" content="Database Management &amp;&amp; Machine Learning">
+    <meta property="og:image" content="http://localhost:1313/images/logo.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/logo.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vasilis Valatsos">
+    <meta name="twitter:description" content="Database Management &amp;&amp; Machine Learning">
+    <meta property="twitter:domain" content="http://localhost:1313/projects/human-diffusion/">
+    <meta property="twitter:url" content="http://localhost:1313/projects/human-diffusion/">
+    <meta name="twitter:image" content="http://localhost:1313/images/logo.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/projects/human-diffusion/" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.224c8e70fed292d18d7d9ae1b36797c99144e0be1117e2ea2c428379c8496551.js" integrity="sha256-IkyOcP7SktGNfZrhs2eXyZFE4L4RF&#43;LqLEKDechJZVE="></script>
+
+    
+    
 </head>
-
-
-<body class="is-preload">
-
-    
-        <div id="wrapper">
-
+<body>
+        <script type="text/javascript">
             
-                <header id="header">
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
 
-                    <div class="content">
-                        <div class="inner">
-                            <h1>There is nothing here</h1>
-                            <h3>
-                                <a href="/">Click here to go back home </a>
-                            </h3>
-                        </div>
-                    </div>
-                </header>
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/logo.png' alt="avatar" />
+            </a>
+        </div>
+        
 
-            <footer id="footer">
-            </footer>
-
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Vasilis Valatsos</a>
         </div>
 
-    
-    <div id="bg"></div>
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/projects/"><span data-feather='code'></span> Projects </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/greek-rss/"><span data-feather='book-open'></span> Greek RSS </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/"><span data-feather='hash'></span> About Me </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/index.xml"><span data-feather='rss' />  </a>
+            </div>
+            
 
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/projects/"><span data-feather='code'></span> Projects </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/greek-rss/"><span data-feather='book-open'></span> Greek RSS </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/"><span data-feather='hash'></span> About Me </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/index.xml"><span data-feather='rss' />  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    
+
+    <div class="post container">
+
+    <div class="post-header-section">
+        <h1></h1>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h1 id="human-diffusion">Human Diffusion</h1>
+<p>You can find the repository <a href="https://github.com/baledick/Human-Diffusion">here</a></p>
+<h2 id="a-q-learning-process-about-the-human-migration-from-africa">A Q-Learning Process About The Human Migration From Africa</h2>
+<p>We start by importing the proper modules (equivalent to libraries in R).</p>
+<p>These are</p>
+<ul>
+<li>NumPy</li>
+<li>MatPlotLib</li>
+<li>Pandas</li>
+<li>PIL, (Pillow) an image handler</li>
+<li>tqdm, (pronounced ta-qa-dum) from Arabic (taqadum, تقدّم) meaning <em>progress</em>, is a simple progress bar to be able to estimate the time for each task</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#78787e">#pip install -r requirements.txt</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff6ac1">from</span> earth <span style="color:#ff6ac1">import</span> Earth
+</span></span></code></pre></div><h3 id="generating-the-map">Generating the Map</h3>
+<p>We initialise the picture that we want to use, and convert it into pixel values, so we can have a pure black and white image of the earth to use.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>stage <span style="color:#ff6ac1">=</span> Earth()
+</span></span></code></pre></div><p>The following forloop checks each individual pixel and the converts it to black or white. The threshold was found through running the loop many times and picking a number that looked good enough.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>stage<span style="color:#ff6ac1">.</span>black_and_white(<span style="color:#5af78e">&#39;earth.jpg&#39;</span>, <span style="color:#5af78e">&#39;newPixels.csv&#39;</span>, <span style="color:#5af78e">&#39;pure-bw-earth.jpg&#39;</span>)
+</span></span></code></pre></div><p>We then generate the new picture and save it before we convert it into an array.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>stage<span style="color:#ff6ac1">.</span>generate_image(<span style="color:#5af78e">&#39;pure-bw-earth.jpg&#39;</span>)
+</span></span></code></pre></div><p>We are now ready to create the map we will need.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>stage<span style="color:#ff6ac1">.</span>plot(<span style="color:#5af78e">&#39;map.jpg&#39;</span>)
+</span></span></code></pre></div><p>Now that we have our map ready, we can move on to the implementation of the algorithm.</p>
+<h3 id="application-of-the-q-learning-algorithm">Application of the Q-Learning Algorithm</h3>
+<p>We import the necessary libraries</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff6ac1">import</span> numpy <span style="color:#ff6ac1">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">import</span> matplotlib.pyplot <span style="color:#ff6ac1">as</span> plt
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">from</span> tqdm <span style="color:#ff6ac1">import</span> tqdm
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>np<span style="color:#ff6ac1">.</span>random<span style="color:#ff6ac1">.</span>seed(<span style="color:#ff9f43">1</span>)
+</span></span></code></pre></div><p>and define the actions that the agent is able to perform</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>actions <span style="color:#ff6ac1">=</span> [<span style="color:#5af78e">&#39;west&#39;</span>, <span style="color:#5af78e">&#39;east&#39;</span>, <span style="color:#5af78e">&#39;north&#39;</span>, <span style="color:#5af78e">&#39;south&#39;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#78787e">#coded to 0, 1, 2, 3</span>
+</span></span></code></pre></div><p>Then we can generate the Q-map, which gives the rewards.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>q_values <span style="color:#ff6ac1">=</span> np<span style="color:#ff6ac1">.</span>random<span style="color:#ff6ac1">.</span>uniform(<span style="color:#ff6ac1">-</span><span style="color:#ff9f43">1</span>, <span style="color:#ff9f43">1</span>, size<span style="color:#ff6ac1">=</span>(stage<span style="color:#ff6ac1">.</span>height,stage<span style="color:#ff6ac1">.</span>width, <span style="color:#ff5c57">len</span>(actions)))
+</span></span></code></pre></div><p>After, we define the functions that we will use, namely tone to generate our starting position, one for the agent to take action either randomly or by checking the Q-table, and one to define the result of the action taken.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff6ac1">def</span> <span style="color:#57c7ff">starting_area</span>(column, row):
+</span></span><span style="display:flex;"><span>    col <span style="color:#ff6ac1">=</span> np<span style="color:#ff6ac1">.</span>random<span style="color:#ff6ac1">.</span>randint(column[<span style="color:#ff9f43">0</span>], column[<span style="color:#ff9f43">1</span>])
+</span></span><span style="display:flex;"><span>    row <span style="color:#ff6ac1">=</span> np<span style="color:#ff6ac1">.</span>random<span style="color:#ff6ac1">.</span>randint(row[<span style="color:#ff9f43">0</span>], row[<span style="color:#ff9f43">1</span>])
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">return</span> col, row
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">def</span> <span style="color:#57c7ff">next_action</span>(current_height, current_width, epsilon):
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">if</span> np<span style="color:#ff6ac1">.</span>random<span style="color:#ff6ac1">.</span>random() <span style="color:#ff6ac1">&lt;</span> epsilon:
+</span></span><span style="display:flex;"><span>        move <span style="color:#ff6ac1">=</span> np<span style="color:#ff6ac1">.</span>argmax(q_values[current_height, current_width])
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">else</span>:
+</span></span><span style="display:flex;"><span>        move <span style="color:#ff6ac1">=</span> np<span style="color:#ff6ac1">.</span>random<span style="color:#ff6ac1">.</span>randint(<span style="color:#ff9f43">4</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">return</span> move
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">def</span> <span style="color:#57c7ff">next_location</span>(height, width, action):
+</span></span><span style="display:flex;"><span>    new_width <span style="color:#ff6ac1">=</span> width
+</span></span><span style="display:flex;"><span>    new_height <span style="color:#ff6ac1">=</span> height
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">if</span> actions[action] <span style="color:#ff6ac1">==</span> <span style="color:#5af78e">&#39;west&#39;</span> <span style="color:#ff6ac1">and</span> width <span style="color:#ff6ac1">&gt;</span> <span style="color:#ff6ac1">-</span><span style="color:#ff9f43">1</span>:
+</span></span><span style="display:flex;"><span>        new_width <span style="color:#ff6ac1">=</span> width <span style="color:#ff6ac1">-</span> <span style="color:#ff9f43">1</span>
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">if</span> actions[action] <span style="color:#ff6ac1">==</span> <span style="color:#5af78e">&#39;east&#39;</span> <span style="color:#ff6ac1">and</span> width <span style="color:#ff6ac1">&lt;</span> stage<span style="color:#ff6ac1">.</span>width <span style="color:#ff6ac1">-</span> <span style="color:#ff9f43">1</span>:
+</span></span><span style="display:flex;"><span>        new_width <span style="color:#ff6ac1">=</span> width <span style="color:#ff6ac1">+</span> <span style="color:#ff9f43">1</span>
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">if</span> actions[action] <span style="color:#ff6ac1">==</span> <span style="color:#5af78e">&#39;north&#39;</span> <span style="color:#ff6ac1">and</span> height <span style="color:#ff6ac1">&gt;</span> <span style="color:#ff9f43">1</span>:
+</span></span><span style="display:flex;"><span>        new_height <span style="color:#ff6ac1">=</span> height <span style="color:#ff6ac1">-</span><span style="color:#ff9f43">1</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">if</span> actions[action] <span style="color:#ff6ac1">==</span> <span style="color:#5af78e">&#39;south&#39;</span> <span style="color:#ff6ac1">and</span> height <span style="color:#ff6ac1">&lt;</span> stage<span style="color:#ff6ac1">.</span>height:
+</span></span><span style="display:flex;"><span>        new_height <span style="color:#ff6ac1">=</span> height <span style="color:#ff6ac1">+</span><span style="color:#ff9f43">1</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>   
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">return</span> new_height, new_width
+</span></span><span style="display:flex;"><span>            
+</span></span></code></pre></div><p>Now we are ready to run the algorithm for the number of episodes we need</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>reward_map <span style="color:#ff6ac1">=</span> np<span style="color:#ff6ac1">.</span>zeros(shape<span style="color:#ff6ac1">=</span>(stage<span style="color:#ff6ac1">.</span>height,stage<span style="color:#ff6ac1">.</span>width))
+</span></span><span style="display:flex;"><span>reward_map[np<span style="color:#ff6ac1">.</span>where(stage<span style="color:#ff6ac1">.</span>map <span style="color:#ff6ac1">&gt;</span> <span style="color:#ff9f43">0</span>)] <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">-</span><span style="color:#ff9f43">10</span>
+</span></span><span style="display:flex;"><span>reward_map[:<span style="color:#ff9f43">10</span>, :] <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">-</span><span style="color:#ff9f43">15</span>
+</span></span><span style="display:flex;"><span>reward_map[<span style="color:#ff9f43">610</span>:, :] <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">-</span><span style="color:#ff9f43">15</span>
+</span></span><span style="display:flex;"><span>reward_map[:, <span style="color:#ff9f43">720</span>:] <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">-</span><span style="color:#ff9f43">15</span>
+</span></span><span style="display:flex;"><span>reward_map[:, :<span style="color:#ff9f43">10</span>] <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">-</span><span style="color:#ff9f43">15</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#78787e">#Arabian bridge</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#78787e"># Gulf of Aden</span>
+</span></span><span style="display:flex;"><span>reward_map[<span style="color:#ff9f43">350</span>:<span style="color:#ff9f43">388</span>, <span style="color:#ff9f43">250</span>:<span style="color:#ff9f43">282</span>] <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#78787e"># Hormuz</span>
+</span></span><span style="display:flex;"><span>reward_map[<span style="color:#ff9f43">300</span>:<span style="color:#ff9f43">340</span>, <span style="color:#ff9f43">290</span>:<span style="color:#ff9f43">315</span>] <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#78787e"># Indonesian bridge</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#78787e"># Sumatra</span>
+</span></span><span style="display:flex;"><span>reward_map[<span style="color:#ff9f43">417</span>:<span style="color:#ff9f43">433</span>, <span style="color:#ff9f43">485</span>:<span style="color:#ff9f43">495</span>] <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#78787e"># Java</span>
+</span></span><span style="display:flex;"><span>reward_map[<span style="color:#ff9f43">450</span>:<span style="color:#ff9f43">455</span>, <span style="color:#ff9f43">495</span>:<span style="color:#ff9f43">505</span>] <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#78787e"># Brunei</span>
+</span></span><span style="display:flex;"><span>reward_map[<span style="color:#ff9f43">430</span>:<span style="color:#ff9f43">465</span>, <span style="color:#ff9f43">525</span>:<span style="color:#ff9f43">530</span>] <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#78787e"># New Guinea</span>
+</span></span><span style="display:flex;"><span>reward_map[<span style="color:#ff9f43">460</span>:<span style="color:#ff9f43">465</span>, <span style="color:#ff9f43">525</span>:<span style="color:#ff9f43">645</span>] <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#78787e"># Australia</span>
+</span></span><span style="display:flex;"><span>reward_map[<span style="color:#ff9f43">460</span>:<span style="color:#ff9f43">505</span>, <span style="color:#ff9f43">525</span>:<span style="color:#ff9f43">605</span>] <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#78787e"># Bering Straight</span>
+</span></span><span style="display:flex;"><span>reward_map[<span style="color:#ff9f43">30</span>:<span style="color:#ff9f43">60</span>, <span style="color:#ff9f43">580</span>:<span style="color:#ff9f43">610</span>] <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">50</span>
+</span></span><span style="display:flex;"><span><span style="color:#78787e"># Australia</span>
+</span></span><span style="display:flex;"><span>reward_map[<span style="color:#ff9f43">510</span>:<span style="color:#ff9f43">540</span>, <span style="color:#ff9f43">580</span>:<span style="color:#ff9f43">610</span>] <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">50</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>real_map <span style="color:#ff6ac1">=</span> np<span style="color:#ff6ac1">.</span>ones(shape<span style="color:#ff6ac1">=</span>(stage<span style="color:#ff6ac1">.</span>height,stage<span style="color:#ff6ac1">.</span>width))<span style="color:#ff6ac1">*</span><span style="color:#ff9f43">10</span>
+</span></span><span style="display:flex;"><span>real_map[np<span style="color:#ff6ac1">.</span>where(stage<span style="color:#ff6ac1">.</span>map <span style="color:#ff6ac1">&gt;</span> <span style="color:#ff9f43">0</span>)] <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">-</span><span style="color:#ff9f43">10</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>timeline <span style="color:#ff6ac1">=</span> np<span style="color:#ff6ac1">.</span>arange(<span style="color:#ff9f43">0</span>, <span style="color:#ff9f43">5000</span>)
+</span></span><span style="display:flex;"><span>episodes <span style="color:#ff6ac1">=</span> np<span style="color:#ff6ac1">.</span>arange(<span style="color:#ff9f43">0</span>, <span style="color:#ff9f43">200000</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>reward_per_episode <span style="color:#ff6ac1">=</span> np<span style="color:#ff6ac1">.</span>zeros(<span style="color:#ff5c57">len</span>(episodes))
+</span></span><span style="display:flex;"><span>lifetime <span style="color:#ff6ac1">=</span> np<span style="color:#ff6ac1">.</span>zeros(<span style="color:#ff5c57">len</span>(episodes))
+</span></span><span style="display:flex;"><span>ims <span style="color:#ff6ac1">=</span> []
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">for</span> episode <span style="color:#ff6ac1">in</span> tqdm(episodes): <span style="color:#78787e">#30k</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    epsilon <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">0.7</span>
+</span></span><span style="display:flex;"><span>    discount_factor <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">0.3</span>
+</span></span><span style="display:flex;"><span>    learning_rate <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    rewards <span style="color:#ff6ac1">=</span> np<span style="color:#ff6ac1">.</span>zeros(<span style="color:#ff5c57">len</span>(timeline))
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">if</span> episode <span style="color:#ff6ac1">&gt;=</span> <span style="color:#ff9f43">195000</span>: <span style="color:#78787e"># This statement is the way we destabilise the system to get more natural motion</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#78787e"># India</span>
+</span></span><span style="display:flex;"><span>        reward_map[<span style="color:#ff9f43">390</span>, <span style="color:#ff9f43">388</span>] <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">20</span>      
+</span></span><span style="display:flex;"><span>    <span style="color:#78787e"># New Guinea Papua</span>
+</span></span><span style="display:flex;"><span>        reward_map[<span style="color:#ff9f43">455</span>, <span style="color:#ff9f43">650</span>] <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">20</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#78787e"># Brunei</span>
+</span></span><span style="display:flex;"><span>        reward_map[<span style="color:#ff9f43">425</span>, <span style="color:#ff9f43">540</span>] <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">20</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#78787e">#Australia</span>
+</span></span><span style="display:flex;"><span>        reward_map[<span style="color:#ff9f43">510</span>:<span style="color:#ff9f43">540</span>, <span style="color:#ff9f43">580</span>:<span style="color:#ff9f43">610</span>] <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">50</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    old_height, old_width <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">400</span>, <span style="color:#ff9f43">230</span>
+</span></span><span style="display:flex;"><span>    height, width <span style="color:#ff6ac1">=</span> starting_area([old_height<span style="color:#ff6ac1">-</span><span style="color:#ff9f43">5</span>, old_height<span style="color:#ff6ac1">+</span><span style="color:#ff9f43">5</span>], [old_width<span style="color:#ff6ac1">-</span><span style="color:#ff9f43">5</span>, old_width<span style="color:#ff6ac1">+</span><span style="color:#ff9f43">5</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">for</span> year <span style="color:#ff6ac1">in</span> timeline:
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">try</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            action <span style="color:#ff6ac1">=</span> next_action(height, width, epsilon)
+</span></span><span style="display:flex;"><span>            old_height, old_width <span style="color:#ff6ac1">=</span> height, width
+</span></span><span style="display:flex;"><span>            height, width <span style="color:#ff6ac1">=</span> next_location(height, width, action)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            reward <span style="color:#ff6ac1">=</span> reward_map[height, width]
+</span></span><span style="display:flex;"><span>            rewards[year] <span style="color:#ff6ac1">=</span> reward
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            old_q_value <span style="color:#ff6ac1">=</span> q_values[old_height, old_width, action]
+</span></span><span style="display:flex;"><span>            temporal_difference <span style="color:#ff6ac1">=</span> reward <span style="color:#ff6ac1">+</span> (discount_factor<span style="color:#ff6ac1">*</span>np<span style="color:#ff6ac1">.</span>max(q_values[height, width])) <span style="color:#ff6ac1">-</span> old_q_value
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            new_q_value <span style="color:#ff6ac1">=</span> old_q_value <span style="color:#ff6ac1">+</span> (learning_rate <span style="color:#ff6ac1">*</span> temporal_difference)
+</span></span><span style="display:flex;"><span>            q_values[old_height, old_width, action] <span style="color:#ff6ac1">=</span> new_q_value                
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ff6ac1">if</span> reward_map[old_height, old_width] <span style="color:#ff6ac1">&gt;</span> <span style="color:#ff9f43">0</span>:
+</span></span><span style="display:flex;"><span>                reward_map[old_height, old_width] <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            real_map[old_height, old_width] <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">except</span> IndexError <span style="color:#ff6ac1">as</span> e:
+</span></span><span style="display:flex;"><span>            <span style="color:#ff6ac1">break</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">if</span> year <span style="color:#ff6ac1">==</span> timeline[<span style="color:#ff6ac1">-</span><span style="color:#ff9f43">1</span>]:
+</span></span><span style="display:flex;"><span>            lifetime[episode] <span style="color:#ff6ac1">=</span> year
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">if</span> reward_map[old_height, old_width] <span style="color:#ff6ac1">&lt;=</span> <span style="color:#ff6ac1">-</span><span style="color:#ff9f43">10</span> <span style="color:#ff6ac1">and</span> reward_map[height, width] <span style="color:#ff6ac1">&lt;=</span> <span style="color:#ff6ac1">-</span><span style="color:#ff9f43">10</span>:
+</span></span><span style="display:flex;"><span>            lifetime[episode] <span style="color:#ff6ac1">=</span> year
+</span></span><span style="display:flex;"><span>            <span style="color:#ff6ac1">break</span>            
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    reward_per_episode[episode] <span style="color:#ff6ac1">=</span> np<span style="color:#ff6ac1">.</span>mean(rewards)
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">if</span> reward_map[<span style="color:#ff9f43">510</span>:<span style="color:#ff9f43">540</span>, <span style="color:#ff9f43">580</span>:<span style="color:#ff9f43">610</span>]<span style="color:#ff6ac1">.</span>all() <span style="color:#ff6ac1">==</span> <span style="color:#ff9f43">0</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#78787e">#Australia</span>
+</span></span><span style="display:flex;"><span>        reward_map[<span style="color:#ff9f43">510</span>:<span style="color:#ff9f43">540</span>, <span style="color:#ff9f43">580</span>:<span style="color:#ff9f43">610</span>] <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">50</span>
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">if</span> reward_map[<span style="color:#ff9f43">30</span>:<span style="color:#ff9f43">60</span>, <span style="color:#ff9f43">580</span>:<span style="color:#ff9f43">610</span>]<span style="color:#ff6ac1">.</span>all() <span style="color:#ff6ac1">==</span> <span style="color:#ff9f43">0</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#78787e"># Bering Straight</span>
+</span></span><span style="display:flex;"><span>        reward_map[<span style="color:#ff9f43">30</span>:<span style="color:#ff9f43">60</span>, <span style="color:#ff9f43">580</span>:<span style="color:#ff9f43">610</span>] <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">50</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#ff6ac1">.</span>figure(figsize <span style="color:#ff6ac1">=</span> (<span style="color:#ff9f43">10</span>,<span style="color:#ff9f43">10</span>))
+</span></span><span style="display:flex;"><span>plt<span style="color:#ff6ac1">.</span>ylabel(<span style="color:#5af78e">&#39;Latitude&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#ff6ac1">.</span>xlabel(<span style="color:#5af78e">&#39;Logntitude&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#ff6ac1">.</span>xticks([])
+</span></span><span style="display:flex;"><span>plt<span style="color:#ff6ac1">.</span>yticks([])
+</span></span><span style="display:flex;"><span>plt<span style="color:#ff6ac1">.</span>imshow(real_map, cmap <span style="color:#ff6ac1">=</span> <span style="color:#5af78e">&#39;ocean_r&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#ff6ac1">.</span>show()
+</span></span></code></pre></div>
+        </p>
+    </div>
+</div>
+
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#human-diffusion">Human Diffusion</a>
+      <ul>
+        <li><a href="#a-q-learning-process-about-the-human-migration-from-africa">A Q-Learning Process About The Human Migration From Africa</a>
+          <ul>
+            <li><a href="#generating-the-map">Generating the Map</a></li>
+            <li><a href="#application-of-the-q-learning-algorithm">Application of the Q-Learning Algorithm</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </nav>
+</aside>
+
+
+
+        </main><footer class="footer">
+    
+    
+
+    
+    <span>&copy; 2024 Vasilis Valatsos</span>
+    
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
 </body>
-
-
-    
-    <script src=http://localhost:1313/assets/js/jquery.min.js></script>
-    <script src=http://localhost:1313/assets/js/browser.min.js></script>
-    <script src=http://localhost:1313/assets/js/breakpoints.min.js></script>
-    <script src=http://localhost:1313/assets/js/util.js></script>
-    <script src=http://localhost:1313/assets/js/main.js></script>
-
 </html>

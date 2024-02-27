@@ -1,0 +1,96 @@
+baseURL = 'https://www.valatsos.gr/'
+
+languageCode = 'en'
+defaultContentLanguage = "en"
+
+title = 'Vasilis Valatsos'
+
+theme = 'gokarna'
+pygmentsStyle = "base16-snazzy"
+
+
+enableEmoji = true
+enableRobotsTXT = true
+
+[menu]
+  
+  [[menu.main]]
+  url="/"
+  name="Home"
+  pre="<span data-feather='home'></span>"
+  weight=1
+  
+  [[menu.main]]
+  url="/projects/"
+  name="Projects"
+  pre = "<span data-feather='code'></span>"
+  weight=2
+
+  # [[menu.main]]
+  # url="/tags/"
+  # name="Tags"
+  # pre="<span data-feather='tag'></span>"
+  # weight=3
+
+  [[menu.main]]
+  identifies="greek-rss"
+  url="/greek-rss/"
+  name="Greek RSS"
+  pre = "<span data-feather='book-open'></span>"
+  weight=4
+
+  [[menu.main]]
+  identifies = "about"
+  url="/about/"
+  name="About Me"
+  pre = "<span data-feather='hash'></span>"
+  weight=5
+ 
+  [[menu.main]]
+  identifier = "rss"
+  pre = "<span data-feather='rss' />"
+  url = "/index.xml"
+  weight = 7
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 4
+    ordered = false
+
+[params]
+
+  avatarURL = "/images/logo.png"
+
+  # Choose one of size-xs, size-s, size-m, size-l & size-xl. (Default: size-m)
+  avatarSize = "size-xl"
+
+  # Description to display on homepage
+  description = "Database Management && Machine Learning"
+
+  # Accent color is displayed when you hover over <a> tags
+  accentColor = "#1b9470"
+
+  # Display "back to top" button on posts
+  ShowBackToTopButton = true
+
+  # You can use this to inject any HTML in the <head> tag.
+  # Ideal usecase for this is to import custom js/css or add your analytics snippet
+  # customHeadHTML = ""
+
+  # Keywords relevant for SEO
+  # metaKeywords = ["blog", "gokarna", "hugo"]
+
+  # If you want to display posts on the homepage, the options are
+  # "popular" (order posts by weight), "recent" (order posts by date)
+  # or "" (do not display, default option)
+  # showPostsOnHomePage = false
+
+  # Footer text
+  footer = "Vasilis Valatsos"
+  
+    socialIcons = [
+    {name = "github", url="https://example.com"},
+    {name = "linkedin", url = "https://example.com"},
+    {name = "email", url = "mailto:vasilvalat@gmail.com"}
+  ]

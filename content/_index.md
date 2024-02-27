@@ -1,6 +1,6 @@
 ---
 title: Vasilis Valatsos
-description: Database Managment && Data Science
+description: DB Management && MLOps
 background: "/images/olivetrees.jpg"
 logo: "/images/logo.png"
 ---

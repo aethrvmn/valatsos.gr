@@ -92,7 +92,5 @@ enableRobotsTXT = true
     socialIcons = [
     {name = "github", url="https://www.github.com/baledick"},
     {name = "linkedin", url = "https://www.linkedin.com/in/vasilvalat/"},
-    {name = "instagram", url = "https://www.instagram.com/pepe.azuro/"},
-    {name = "facebook", url = "https://www.facebook.com/profile.php?id=61553037219076"},
     {name = "email", url = "mailto:vasilvalat@gmail.com"}
   ]

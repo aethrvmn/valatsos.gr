@@ -66,7 +66,7 @@ enableRobotsTXT = true
   avatarSize = "size-xl"
 
   # Description to display on homepage
-  description = "Database Management && Machine Learning"
+  description = "Data Science | Machine Learning | Reinforcement Learning"
 
   # Accent color is displayed when you hover over <a> tags
   accentColor = "#1b9470"

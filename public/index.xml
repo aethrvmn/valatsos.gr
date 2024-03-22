@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vasilis Valatsos</title>
-    <link>http://localhost:1313/</link>
+    <link>https://www.valatsos.gr/</link>
     <description>Recent content on Vasilis Valatsos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.valatsos.gr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/projects/bachelor-thesis/</link>
+      <link>https://www.valatsos.gr/projects/bachelor-thesis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/bachelor-thesis/</guid>
+      <guid>https://www.valatsos.gr/projects/bachelor-thesis/</guid>
       <description>The One–Dimensional Heisenberg Model, RG Methods and Numerical Simulation of the SDRG Process You can find the thesis here and the code here&#xA;Abstract The Strong Disorder Renormalisation Group (SDRG) method, first introduced by Dasgupta, Ma and Hu, and later greatly expanded by Fisher, yields asymptotically exact results in distributions where the disorder grows without limit in large scales, whilst Fisher also calculated limit values as well as scaling factors for random spin chains.</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/projects/black-scholes/</link>
+      <link>https://www.valatsos.gr/projects/black-scholes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/black-scholes/</guid>
+      <guid>https://www.valatsos.gr/projects/black-scholes/</guid>
       <description>Black Scholes Model You can find the repository here&#xA;Amandeep Singh, Vasilis Valatsos&#xA;We attempt to make a program that predicts optional premiums, using the Black-Scholes model, introduced in 1973.&#xA;To start off, we first install all the required modules, (We have the cell commented, but in the case that one or more modules aren&amp;rsquo;t installed, uncomment and run once the cell below.)&#xA;# pip install -r &amp;#34;requirements.txt&amp;#34; where the module scipy.</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/projects/human-diffusion/</link>
+      <link>https://www.valatsos.gr/projects/human-diffusion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/human-diffusion/</guid>
+      <guid>https://www.valatsos.gr/projects/human-diffusion/</guid>
       <description>Human Diffusion You can find the repository here&#xA;A Q-Learning Process About The Human Migration From Africa We start by importing the proper modules (equivalent to libraries in R).&#xA;These are&#xA;NumPy MatPlotLib Pandas PIL, (Pillow) an image handler tqdm, (pronounced ta-qa-dum) from Arabic (taqadum, تقدّم) meaning progress, is a simple progress bar to be able to estimate the time for each task #pip install -r requirements.txt from earth import Earth Generating the Map We initialise the picture that we want to use, and convert it into pixel values, so we can have a pure black and white image of the earth to use.</description>
     </item>
     <item>
       <title>About Me</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://www.valatsos.gr/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://www.valatsos.gr/about/</guid>
       <description>I&amp;rsquo;m a Data Scientist with a strong background in Python programming, focusing on developing efficient data management solutions. At Students for Liberty, I led the development of an alumni database, utilizing SalesForce for data management and alumni relations. I also used ReactJS and PostgreSQL for internal projects and Bitbucket for version control. This experience honed my skills in creating tools that simplify complex data processes.&#xA;I&amp;rsquo;m currently pursuing a M.Sc. in Stochastics and Data Science at the University of Torino, where my thesis work explores multi-agent reinforcement learning.</description>
     </item>
     <item>
       <title>Liberal-gr</title>
-      <link>http://localhost:1313/greek-rss/liberal-gr/</link>
+      <link>https://www.valatsos.gr/greek-rss/liberal-gr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/greek-rss/liberal-gr/</guid>
+      <guid>https://www.valatsos.gr/greek-rss/liberal-gr/</guid>
       <description>Liberal.gr is a Greek center-right liberal media outlet.&#xA;You can find the RSS feed for different categories, simply copy and paste it to your RSS reader of choice.&#xA;All the articles are in Greek.&#xA;Economics https://valatsos.gr/rss/liberal.gr/oikonomia.xml Politics https://valatsos.gr/rss/liberal.gr/politiki.xml Opinions https://valatsos.gr/rss/liberal.gr/apopsi.xml Markets https://valatsos.gr/rss/liberal.gr/agores.xml Technology https://valatsos.gr/rss/liberal.gr/tehnologia.xml International Matters https://valatsos.gr/rss/liberal.gr/diethni-themata.xml </description>
     </item>
   </channel>

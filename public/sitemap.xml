@@ -2,24 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.valatsos.gr/greek-rss/</loc>
+    <loc>http://localhost:1313/greek-rss/</loc>
   </url><url>
-    <loc>https://www.valatsos.gr/projects/bachelor-thesis/</loc>
+    <loc>http://localhost:1313/projects/bachelor-thesis/</loc>
   </url><url>
-    <loc>https://www.valatsos.gr/projects/black-scholes/</loc>
+    <loc>http://localhost:1313/projects/black-scholes/</loc>
   </url><url>
-    <loc>https://www.valatsos.gr/projects/human-diffusion/</loc>
+    <loc>http://localhost:1313/projects/human-diffusion/</loc>
   </url><url>
-    <loc>https://www.valatsos.gr/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>https://www.valatsos.gr/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://www.valatsos.gr/greek-rss/liberal-gr/</loc>
+    <loc>http://localhost:1313/greek-rss/liberal-gr/</loc>
   </url><url>
-    <loc>https://www.valatsos.gr/projects/</loc>
+    <loc>http://localhost:1313/projects/</loc>
   </url><url>
-    <loc>https://www.valatsos.gr/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url><url>
-    <loc>https://www.valatsos.gr/</loc>
+    <loc>http://localhost:1313/</loc>
   </url>
 </urlset>

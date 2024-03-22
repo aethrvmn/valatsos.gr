@@ -92,5 +92,6 @@ enableRobotsTXT = true
     socialIcons = [
     {name = "github", url="https://www.github.com/baledick"},
     {name = "linkedin", url = "https://www.linkedin.com/in/vasilvalat/"},
+    {name = "telegram", url = "https://t.me/baledick"},
     {name = "email", url = "mailto:vasilvalat@gmail.com"}
   ]

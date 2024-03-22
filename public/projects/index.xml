@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Vasilis Valatsos</title>
-    <link>https://www.valatsos.gr/projects/</link>
+    <link>http://localhost:1313/projects/</link>
     <description>Recent content in Projects on Vasilis Valatsos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="https://www.valatsos.gr/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://www.valatsos.gr/projects/bachelor-thesis/</link>
+      <link>http://localhost:1313/projects/bachelor-thesis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.valatsos.gr/projects/bachelor-thesis/</guid>
+      <guid>http://localhost:1313/projects/bachelor-thesis/</guid>
       <description>The One–Dimensional Heisenberg Model, RG Methods and Numerical Simulation of the SDRG Process You can find the thesis here and the code here&#xA;Abstract The Strong Disorder Renormalisation Group (SDRG) method, first introduced by Dasgupta, Ma and Hu, and later greatly expanded by Fisher, yields asymptotically exact results in distributions where the disorder grows without limit in large scales, whilst Fisher also calculated limit values as well as scaling factors for random spin chains.</description>
     </item>
     <item>
       <title></title>
-      <link>https://www.valatsos.gr/projects/black-scholes/</link>
+      <link>http://localhost:1313/projects/black-scholes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.valatsos.gr/projects/black-scholes/</guid>
+      <guid>http://localhost:1313/projects/black-scholes/</guid>
       <description>Black Scholes Model You can find the repository here&#xA;Amandeep Singh, Vasilis Valatsos&#xA;We attempt to make a program that predicts optional premiums, using the Black-Scholes model, introduced in 1973.&#xA;To start off, we first install all the required modules, (We have the cell commented, but in the case that one or more modules aren&amp;rsquo;t installed, uncomment and run once the cell below.)&#xA;# pip install -r &amp;#34;requirements.txt&amp;#34; where the module scipy.</description>
     </item>
     <item>
       <title></title>
-      <link>https://www.valatsos.gr/projects/human-diffusion/</link>
+      <link>http://localhost:1313/projects/human-diffusion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.valatsos.gr/projects/human-diffusion/</guid>
+      <guid>http://localhost:1313/projects/human-diffusion/</guid>
       <description>Human Diffusion You can find the repository here&#xA;A Q-Learning Process About The Human Migration From Africa We start by importing the proper modules (equivalent to libraries in R).&#xA;These are&#xA;NumPy MatPlotLib Pandas PIL, (Pillow) an image handler tqdm, (pronounced ta-qa-dum) from Arabic (taqadum, تقدّم) meaning progress, is a simple progress bar to be able to estimate the time for each task #pip install -r requirements.txt from earth import Earth Generating the Map We initialise the picture that we want to use, and convert it into pixel values, so we can have a pure black and white image of the earth to use.</description>
     </item>
   </channel>

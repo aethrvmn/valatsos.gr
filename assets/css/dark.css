@@ -1,12 +1,12 @@
 :root {
-  --dark-primary-color: #0e1613;
+  --dark-primary-color: 14, 22, 19;
   --dark-secondary-color: #1e3f35;
   --dark-tertiary-color: #0e3d17;
   --dark-text-color: #E9F3F0;
 }
 
 html {
-  background-color: var(--dark-primary-color);
+  background-color: rgb(var(--dark-primary-color));
   color: var(--dark-text-color);
   fill: var(--dark-text-color);
 }

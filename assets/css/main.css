@@ -225,7 +225,7 @@ a:hover .feather-sun {
   width: 24px;
 }
 .nav-hamburger-list {
-  background: rgb(var(--light-primary-color));
+  background: var(--light-primary-color);
   border-bottom: solid 1.5px var(--light-secondary-color);
   border-top: solid 1.5px var(--light-secondary-color);
   list-style-type: none;

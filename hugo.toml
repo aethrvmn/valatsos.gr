@@ -13,12 +13,12 @@ enableEmoji = true
 enableRobotsTXT = true
 
 [menu]
-  
+
   [[menu.main]]
   url="/"
   name="Home"
-  pre="<span data-feather='home'></span>"
   weight=1
+  pre = "<span data-feather='home'></span>"
   
   [[menu.main]]
   url="/projects/"
@@ -26,28 +26,29 @@ enableRobotsTXT = true
   pre = "<span data-feather='code'></span>"
   weight=2
 
-  # [[menu.main]]
-  # url="/tags/"
-  # name="Tags"
-  # pre="<span data-feather='tag'></span>"
-  # weight=3
-
   [[menu.main]]
-  identifies="greek-rss"
-  url="/greek-rss/"
-  name="Greek RSS"
-  pre = "<span data-feather='book-open'></span>"
-  weight=4
+  url="/blog/"
+  name="Blog"
+  pre = "<span data-feather='feather'></span>"
+  weight=3
+
+  # [[menu.main]]
+  # identifies="greek-rss"
+  # url="/greek-rss/"
+  # name="Greek RSS"
+  # pre = "<span data-feather='book-open'></span>"
+  # weight=4
 
   [[menu.main]]
   identifies = "about"
   url="/about/"
-  name="About Me"
+  name="About"
   pre = "<span data-feather='hash'></span>"
   weight=5
  
   [[menu.main]]
   identifier = "rss"
+  name = "RSS"
   pre = "<span data-feather='rss' />"
   url = "/index.xml"
   weight = 7

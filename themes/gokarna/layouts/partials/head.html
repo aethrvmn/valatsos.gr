@@ -16,7 +16,11 @@
     {{ $keywords := union $siteKeywords $postKeywords }}
 
     <!-- SEO titles & descriptions -->
-    <title>{{ $title }}</title>
+    {{ if .IsHome }}
+        <title> {{ .Site.Title }}</title>
+    {{ else }}
+    <title>{{ $title }} | {{ .Site.Title }}</title>
+    {{ end }}
     <meta name="description" content="{{ $description }}">
     <meta name="keywords" content='{{ delimit $keywords ", "}}'>
 

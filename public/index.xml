@@ -4,9 +4,17 @@
     <title>Vasilis Valatsos</title>
     <link>https://www.valatsos.gr/</link>
     <description>Recent content on Vasilis Valatsos</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
+    <lastBuildDate>Wed, 01 May 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.valatsos.gr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trying Nim: A low level journey</title>
+      <link>https://www.valatsos.gr/blog/nim1/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.valatsos.gr/blog/nim1/</guid>
+      <description>The context After 5 years of venturing into Python, I have decided that I want to delve into a lower level language.&#xA;Python&amp;rsquo;s strength is that it&amp;rsquo;s easy to learn. There is no compile time vs runtime, no syntax sugar, no strongly typed vars, no static types.&#xA;It essentially allows anyone to learn data analytics, machine learning, computer vision and artificial intelligence, without needing to know either programming, or how any of this works under the hood.</description>
+    </item>
     <item>
       <title></title>
       <link>https://www.valatsos.gr/projects/bachelor-thesis/</link>
@@ -33,7 +41,7 @@
       <link>https://www.valatsos.gr/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.valatsos.gr/about/</guid>
-      <description>I&amp;rsquo;m a Data Scientist with a strong background in Python programming, focusing on developing efficient data management solutions. At Students for Liberty, I led the development of an alumni database, utilizing SalesForce for data management and alumni relations. I also used ReactJS and PostgreSQL for internal projects and Bitbucket for version control. This experience honed my skills in creating tools that simplify complex data processes.&#xA;I&amp;rsquo;m currently pursuing a M.Sc. in Stochastics and Data Science at the University of Torino, where my thesis work explores multi-agent reinforcement learning.</description>
+      <description>I&amp;rsquo;m currently pursuing a M.Sc. in Stochastics and Data Science at the University of Torino, where my thesis work explores multi-agent reinforcement learning, which involves developing a training environment with PyGame.&#xA;My academic background also includes a Bachelor&amp;rsquo;s degree in Physics from the National and Kapodistrian University of Athens, with a thesis on simulating the strong disorder renormalization group method for a specific model in quantum mechanics.&#xA;You can find my full CV here</description>
     </item>
     <item>
       <title>Liberal-gr</title>

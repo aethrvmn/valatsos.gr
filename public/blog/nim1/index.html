@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #1b9470;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    <title>Trying Nim: A low level journey | Vasilis Valatsos</title>
+    
+    <meta name="description" content="Data Science | Machine Learning | Reinforcement Learning">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="https://www.valatsos.gr/blog/nim1/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Trying Nim: A low level journey">
+    <meta property="og:description" content="Data Science | Machine Learning | Reinforcement Learning">
+    <meta property="og:image" content="https://www.valatsos.gr/images/logo.png">
+    <meta property="og:image:secure_url" content="https://www.valatsos.gr/images/logo.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Trying Nim: A low level journey">
+    <meta name="twitter:description" content="Data Science | Machine Learning | Reinforcement Learning">
+    <meta property="twitter:domain" content="https://www.valatsos.gr/blog/nim1/">
+    <meta property="twitter:url" content="https://www.valatsos.gr/blog/nim1/">
+    <meta name="twitter:image" content="https://www.valatsos.gr/images/logo.png">
+
+    
+    <link rel="canonical" href="https://www.valatsos.gr/blog/nim1/" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.224c8e70fed292d18d7d9ae1b36797c99144e0be1117e2ea2c428379c8496551.js" integrity="sha256-IkyOcP7SktGNfZrhs2eXyZFE4L4RF&#43;LqLEKDechJZVE="></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://www.valatsos.gr/">
+                <img src='/images/logo.png' alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://www.valatsos.gr/">Vasilis Valatsos</a>
+        </div>
+
+        <div class="nav-links">
+            
+            
+            <div class="nav-link">
+                <a href="https://www.valatsos.gr/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            
+            <div class="nav-link">
+                <a href="https://www.valatsos.gr/projects/"><span data-feather='code'></span> Projects </a>
+            </div>
+            
+            
+            <div class="nav-link">
+                <a href="https://www.valatsos.gr/blog/"><span data-feather='feather'></span> Blog </a>
+            </div>
+            
+            
+            <div class="nav-link">
+                <a href="https://www.valatsos.gr/about/"><span data-feather='hash'></span> About </a>
+            </div>
+            
+            
+             <span class="nav-icons-divider"></span>           
+            
+            <div class="nav-link">
+                <a href="https://www.valatsos.gr/index.xml"><span data-feather='rss' /> RSS </a>
+            </div>
+            
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://www.valatsos.gr/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://www.valatsos.gr/projects/"><span data-feather='code'></span> Projects </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://www.valatsos.gr/blog/"><span data-feather='feather'></span> Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://www.valatsos.gr/about/"><span data-feather='hash'></span> About </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://www.valatsos.gr/index.xml"><span data-feather='rss' /> RSS </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Trying Nim: A low level journey</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">May 1, 2024
+        
+        </p>
+
+        <ul class="post-tags">
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h2 id="the-context">The context</h2>
+<p>After 5 years of venturing into <strong>Python</strong>, I have decided that I want to delve into a lower level language.</p>
+<p><strong>Python</strong>&rsquo;s strength is that it&rsquo;s easy to learn. There is no compile time vs runtime, no syntax sugar, no strongly typed vars, no static types.</p>
+<p>It essentially allows anyone to learn data analytics, machine learning, computer vision and artificial intelligence, without needing to know either programming, or how any of this works under the hood.</p>
+<p>In the spirit of learning something new every so often, I decided that it&rsquo;s time to leave my interpreted, dynamic, extremely slow comfort zone for something faster. Something compiled, that <em>can</em> be unsafe, but only when I want to learn how to shoot myself in the foot.</p>
+<h2 id="the-options">The options</h2>
+<p>Looking at all the available options we have the good old <strong>C</strong>, and <strong>C++</strong>, and more modern options like <strong>Rust</strong>, <strong>Go</strong>, <strong>Nim</strong> and <strong>Zig</strong>.</p>
+<p>First things first: I <em>do not</em> want to learn <strong>C</strong> or <strong>C++</strong> at this time in my life. I am just figuring out low level languages, and <strong>C</strong> and <strong>C++</strong> seem like they are out to get me.</p>
+<p>The main things that scare me are:</p>
+<ul>
+<li>No memory safety</li>
+<li>Weird syntax</li>
+<li>Unfriendly compiler and error messages</li>
+</ul>
+<p>I do eventually hope to become a <strong>C</strong> wizard, maybe contributing to the Linux kernel, maybe doing my own thing, but for now <strong>C</strong> seems too daunting, and everyone with whom I&rsquo;ve spoken to about <strong>C++</strong> suggests to never touch it, for I will never be able to understand the code of others, or of myself a few years down the line.</p>
+<p>This leaves the rest of the options.</p>
+<p><strong>Rust</strong> is probably the most popular of the options, with cargo being probably the best packaging system, which completely evades whatever the hell Python is doing with its own system of pip, or conda, or poetry, or rye, or etc etc, and the versioning system. As a mostly solo dev, I havent had many experiences with dependency hell, but I have gone through moving to a different system which somehow broke the packages (looking at you MacOS). <strong>Rust</strong> however has an extremely bizarre syntax (remember, I am an only-Python dev), and wrapping my head around borrowing is extremely difficult. It sounds like an extremely simple topic, but most of the people act as it is more difficult, so I always have a feeling that I am missing critical information.</p>
+<p><strong>Zig</strong> is memory unsafe, since it does not have a GC, which means I will mess things up and starting with failure is not something that I find productive. Failure with some success, yes, but you need to gradually go deeper, not dive straight into the abyss when you can barely swim.</p>
+<p>So in the end it came down between <strong>Go</strong> and <strong>Nim</strong>, and the deciding factor was syntax.</p>
+<p><strong>Nim</strong>&rsquo;s syntax is almost identical to <strong>Python</strong> down to the error messages. This means that, <em>in-general</em>, I can transition easier to a sysmet&rsquo;s language, since it will be a far more familiar setting. You also care about whitespace, which I highly prefer over <code>{;}</code>, and means that the resulting code is highly readable. I also enjoy the fact that <strong>Nim</strong> is very unopinionated when it comes to writing code.</p>
+<p>As an example, here is how to make a print statement in <strong>Nim</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nim" data-lang="nim"><span style="display:flex;"><span>echo <span style="color:#5af78e">&#34;Hello World!&#34;</span>
+</span></span><span style="display:flex;"><span>echo(<span style="color:#5af78e">&#34;Hello World!&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#5af78e">&#34;Hello World!&#34;</span>.echo <span style="color:#78787e"># This feels wrong coming from Python but it also feels very fun, like when you eat sweets when you&#39;re not supposed to.</span>
+</span></span><span style="display:flex;"><span><span style="color:#5af78e">&#34;Hello World!&#34;</span>.echo()
+</span></span></code></pre></div><p>This fact makes the language feel a lot more playful, whereas I&rsquo;ve heard <strong>Go</strong> being described as boring.</p>
+<p>So moving forward, I need a project to choose, in order to have something to work on to grind myself and make the language and the low level stuff more familiar. Probably something related to my field of expertise of reinforcement learning.</p>
+
+        </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
+    </div>
+
+    
+    
+    <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="topFunction()" title="Go to top">
+        
+        <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+    </svg>
+    <script>
+        let backToTopButton = document.getElementById("btt-button");
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            smoothScrollToTop();
+        }
+
+        function smoothScrollToTop() {
+            const scrollToTop = () => {
+                const c = document.documentElement.scrollTop || document.body.scrollTop;
+                if (c > 0) {
+                    window.requestAnimationFrame(scrollToTop);
+                    window.scrollTo(0, c - c / 8);
+                }
+            };
+            scrollToTop();
+        }
+    </script>
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+    <span>&copy; 2024 Vasilis Valatsos</span>
+    
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>

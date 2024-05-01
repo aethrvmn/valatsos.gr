@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Vasilis Valatsos</title>
+    <link>https://www.valatsos.gr/blog/</link>
+    <description>Recent content in Blogs on Vasilis Valatsos</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 01 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.valatsos.gr/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trying Nim: A low level journey</title>
+      <link>https://www.valatsos.gr/blog/nim1/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.valatsos.gr/blog/nim1/</guid>
+      <description>The context After 5 years of venturing into Python, I have decided that I want to delve into a lower level language.&#xA;Python&amp;rsquo;s strength is that it&amp;rsquo;s easy to learn. There is no compile time vs runtime, no syntax sugar, no strongly typed vars, no static types.&#xA;It essentially allows anyone to learn data analytics, machine learning, computer vision and artificial intelligence, without needing to know either programming, or how any of this works under the hood.</description>
+    </item>
+  </channel>
+</rss>

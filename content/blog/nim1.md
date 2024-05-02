@@ -37,7 +37,7 @@ This leaves the rest of the options.
 
 So in the end it came down between **Go** and **Nim**, and the deciding factor was syntax.
 
-**Nim**'s syntax is almost identical to **Python** down to the error messages. This means that, *in-general*, I can transition easier to a sysmet's language, since it will be a far more familiar setting. You also care about whitespace, which I highly prefer over `{;}`, and means that the resulting code is highly readable. I also enjoy the fact that **Nim** is very unopinionated when it comes to writing code.
+**Nim**'s syntax is almost identical to **Python** down to the error messages. This means that, *in-general*, I can transition easier to a system's language, since it will be a far more familiar setting. You also care about whitespace, which I highly prefer over `{;}`, and means that, at least in my opinion, the resulting code is highly readable. I also enjoy the fact that **Nim** is very unopinionated when it comes to writing code.
 
 As an example, here is how to make a print statement in **Nim**
 

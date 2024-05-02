@@ -4,7 +4,7 @@ showTableOfContents: true
 ---
 # The One–Dimensional Heisenberg Model, RG Methods and Numerical Simulation of the SDRG Process
 
-You can find the thesis [here](/pdfs/bthesis.pdf) and the code [here](https://github.com/baledick/1d-RandAFHeisenberg-SDRG)
+You can find the thesis [here](/pdfs/bthesis.pdf) and the code [here](https://github.com/aethrvmn/1d-RandAFHeisenberg-SDRG)
 
 ## Abstract
 

@@ -6,7 +6,7 @@ showTableOfContents: true
 # Black Scholes Model
 
 
-You can find the repository [here](https://github.com/baledick/Black-Scholes-Model)
+You can find the repository [here](https://github.com/aethrvmn/Black-Scholes-Model)
 
 **Amandeep Singh, Vasilis Valatsos**
 

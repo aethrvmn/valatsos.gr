@@ -6,7 +6,7 @@ showTableOfContents: true
 # Human Diffusion
 
 
-You can find the repository [here](https://github.com/baledick/Human-Diffusion)
+You can find the repository [here](https://github.com/aethrvmn/Human-Diffusion)
 
 ## A Q-Learning Process About The Human Migration From Africa
 

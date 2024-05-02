@@ -91,7 +91,7 @@ enableRobotsTXT = true
   footer = "Vasilis Valatsos"
   
     socialIcons = [
-    {name = "github", url="https://www.github.com/baledick"},
+    {name = "github", url="https://www.github.com/aethrvmn"},
     {name = "linkedin", url = "https://www.linkedin.com/in/vasilvalat/"},
     {name = "telegram", url = "https://t.me/aethrvmn"},
     {name = "email", url = "mailto:vasilvalat@gmail.com"}

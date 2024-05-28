@@ -2,31 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:38529/blog/</loc>
+    <loc>https://www.valatsos.gr/blog/</loc>
     <lastmod>2024-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:38529/blog/nim1/</loc>
+    <loc>https://www.valatsos.gr/blog/nim1/</loc>
     <lastmod>2024-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:38529/</loc>
+    <loc>https://www.valatsos.gr/</loc>
     <lastmod>2024-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:38529/greek-rss/</loc>
+    <loc>https://www.valatsos.gr/greek-rss/</loc>
   </url><url>
-    <loc>http://localhost:38529/projects/bachelor-thesis/</loc>
+    <loc>https://www.valatsos.gr/projects/bachelor-thesis/</loc>
   </url><url>
-    <loc>http://localhost:38529/projects/black-scholes/</loc>
+    <loc>https://www.valatsos.gr/projects/black-scholes/</loc>
   </url><url>
-    <loc>http://localhost:38529/projects/human-diffusion/</loc>
+    <loc>https://www.valatsos.gr/projects/human-diffusion/</loc>
   </url><url>
-    <loc>http://localhost:38529/about/</loc>
+    <loc>https://www.valatsos.gr/about/</loc>
   </url><url>
-    <loc>http://localhost:38529/categories/</loc>
+    <loc>https://www.valatsos.gr/categories/</loc>
   </url><url>
-    <loc>http://localhost:38529/greek-rss/liberal-gr/</loc>
+    <loc>https://www.valatsos.gr/greek-rss/liberal-gr/</loc>
   </url><url>
-    <loc>http://localhost:38529/projects/</loc>
+    <loc>https://www.valatsos.gr/projects/</loc>
   </url><url>
-    <loc>http://localhost:38529/tags/</loc>
+    <loc>https://www.valatsos.gr/tags/</loc>
   </url>
 </urlset>

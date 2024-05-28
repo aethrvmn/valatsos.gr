@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vasilis Valatsos</title>
-    <link>https://www.valatsos.gr/</link>
+    <link>http://localhost:38529/</link>
     <description>Recent content on Vasilis Valatsos</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 01 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.valatsos.gr/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:38529/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Trying Nim: A low level journey</title>
-      <link>https://www.valatsos.gr/blog/nim1/</link>
+      <link>http://localhost:38529/blog/nim1/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.valatsos.gr/blog/nim1/</guid>
+      <guid>http://localhost:38529/blog/nim1/</guid>
       <description>The context After 5 years of venturing into Python, I have decided that I want to delve into a lower level language.&#xA;Python&amp;rsquo;s strength is that it&amp;rsquo;s easy to learn. There is no compile time vs runtime, no syntax sugar, no strongly typed vars, no static types.&#xA;It essentially allows anyone to learn data analytics, machine learning, computer vision and artificial intelligence, without needing to know either programming, or how any of this works under the hood.</description>
     </item>
     <item>
       <title></title>
-      <link>https://www.valatsos.gr/projects/bachelor-thesis/</link>
+      <link>http://localhost:38529/projects/bachelor-thesis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.valatsos.gr/projects/bachelor-thesis/</guid>
+      <guid>http://localhost:38529/projects/bachelor-thesis/</guid>
       <description>The One–Dimensional Heisenberg Model, RG Methods and Numerical Simulation of the SDRG Process You can find the thesis here and the code here&#xA;Abstract The Strong Disorder Renormalisation Group (SDRG) method, first introduced by Dasgupta, Ma and Hu, and later greatly expanded by Fisher, yields asymptotically exact results in distributions where the disorder grows without limit in large scales, whilst Fisher also calculated limit values as well as scaling factors for random spin chains.</description>
     </item>
     <item>
       <title></title>
-      <link>https://www.valatsos.gr/projects/black-scholes/</link>
+      <link>http://localhost:38529/projects/black-scholes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.valatsos.gr/projects/black-scholes/</guid>
+      <guid>http://localhost:38529/projects/black-scholes/</guid>
       <description>Black Scholes Model You can find the repository here&#xA;Amandeep Singh, Vasilis Valatsos&#xA;We attempt to make a program that predicts optional premiums, using the Black-Scholes model, introduced in 1973.&#xA;To start off, we first install all the required modules, (We have the cell commented, but in the case that one or more modules aren&amp;rsquo;t installed, uncomment and run once the cell below.)&#xA;# pip install -r &amp;#34;requirements.txt&amp;#34; where the module scipy.</description>
     </item>
     <item>
       <title></title>
-      <link>https://www.valatsos.gr/projects/human-diffusion/</link>
+      <link>http://localhost:38529/projects/human-diffusion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.valatsos.gr/projects/human-diffusion/</guid>
+      <guid>http://localhost:38529/projects/human-diffusion/</guid>
       <description>Human Diffusion You can find the repository here&#xA;A Q-Learning Process About The Human Migration From Africa We start by importing the proper modules (equivalent to libraries in R).&#xA;These are&#xA;NumPy MatPlotLib Pandas PIL, (Pillow) an image handler tqdm, (pronounced ta-qa-dum) from Arabic (taqadum, تقدّم) meaning progress, is a simple progress bar to be able to estimate the time for each task #pip install -r requirements.txt from earth import Earth Generating the Map We initialise the picture that we want to use, and convert it into pixel values, so we can have a pure black and white image of the earth to use.</description>
     </item>
     <item>
       <title>About Me</title>
-      <link>https://www.valatsos.gr/about/</link>
+      <link>http://localhost:38529/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.valatsos.gr/about/</guid>
+      <guid>http://localhost:38529/about/</guid>
       <description>I&amp;rsquo;m currently pursuing a M.Sc. in Stochastics and Data Science at the University of Torino, where my thesis work explores multi-agent reinforcement learning, which involves developing a training environment with PyGame.&#xA;My academic background also includes a Bachelor&amp;rsquo;s degree in Physics from the National and Kapodistrian University of Athens, with a thesis on simulating the strong disorder renormalization group method for a specific model in quantum mechanics.&#xA;You can find my full CV here</description>
     </item>
     <item>
       <title>Liberal-gr</title>
-      <link>https://www.valatsos.gr/greek-rss/liberal-gr/</link>
+      <link>http://localhost:38529/greek-rss/liberal-gr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.valatsos.gr/greek-rss/liberal-gr/</guid>
+      <guid>http://localhost:38529/greek-rss/liberal-gr/</guid>
       <description>Liberal.gr is a Greek center-right liberal media outlet.&#xA;You can find the RSS feed for different categories, simply copy and paste it to your RSS reader of choice.&#xA;All the articles are in Greek.&#xA;Economics https://valatsos.gr/rss/liberal.gr/oikonomia.xml Politics https://valatsos.gr/rss/liberal.gr/politiki.xml Opinions https://valatsos.gr/rss/liberal.gr/apopsi.xml Markets https://valatsos.gr/rss/liberal.gr/agores.xml Technology https://valatsos.gr/rss/liberal.gr/tehnologia.xml International Matters https://valatsos.gr/rss/liberal.gr/diethni-themata.xml </description>
     </item>
   </channel>

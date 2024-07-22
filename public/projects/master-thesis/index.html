@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-	<meta name="generator" content="Hugo 0.128.2">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,12 +18,12 @@
 
     
     
-        <title> Vasilis Valatsos</title>
+    <title>Vasilis Valatsos | Vasilis Valatsos</title>
     
     <meta name="description" content="Data Science | Machine Learning | Reinforcement Learning">
     <meta name="keywords" content=''>
 
-    <meta property="og:url" content="https://www.valatsos.gr/">
+    <meta property="og:url" content="https://www.valatsos.gr/projects/master-thesis/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Vasilis Valatsos">
     <meta property="og:description" content="Data Science | Machine Learning | Reinforcement Learning">
@@ -34,12 +33,12 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Vasilis Valatsos">
     <meta name="twitter:description" content="Data Science | Machine Learning | Reinforcement Learning">
-    <meta property="twitter:domain" content="https://www.valatsos.gr/">
-    <meta property="twitter:url" content="https://www.valatsos.gr/">
+    <meta property="twitter:domain" content="https://www.valatsos.gr/projects/master-thesis/">
+    <meta property="twitter:url" content="https://www.valatsos.gr/projects/master-thesis/">
     <meta name="twitter:image" content="https://www.valatsos.gr/images/logo.png">
 
     
-    <link rel="canonical" href="https://www.valatsos.gr/" />
+    <link rel="canonical" href="https://www.valatsos.gr/projects/master-thesis/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -148,55 +147,44 @@
     </nav>
 </header>
 <main id="content">
-<section class="home-about">
-	<div class="avatar">
-        
-        <img class=size-xl src='/images/logo.png' alt="avatar" />
-        
-	</div>
-
-    <h1>Vasilis Valatsos</h1>
-    
-        <h3>Data Science | Machine Learning | Reinforcement Learning</h3>
     
 
-</section>
+    <div class="post container">
 
-<div class="flex-break"></div>
+    <div class="post-header-section">
+        <h1></h1>
+    </div>
 
+    <div class="post-content">
+        <p>
+            <h1 id="reinforcement-learning-theory-and-implementation-in-a-custom-environment">Reinforcement Learning: Theory and Implementation in a Custom Environment</h1>
+<p>You can find the thesis <a href="/pdfs/mthesis.pdf">here</a> and the code <a href="https://github.com/aethrvmn/GodotPneumaRL">here</a></p>
+<h2 id="abstract">Abstract</h2>
+<p>Reinforcement Learning (RL) is a subcategory of Machine Learning that consistently surpasses human performance and demonstrates superhuman understanding in various environments and datasets. Its applications span from mastering games like Go and Chess to optimizing real-world operations in robotics, finance, and healthcare. The adaptability and efficiency of RL algorithms in dynamic and complex scenarios highlight their transformative potential across multiple domains.</p>
+<p>In this thesis, we present some core concepts of Reinforcement Learning.</p>
+<p>First, we introduce the mathematical foundation of Reinforcement Learning (RL) through the Multi-Armed Bandit (MAB) problem, which serves as a simplified model for decision-making problems without state transitions, focusing solely on the trade-off between exploration and exploitation. We then extend the discussion to the more complex Markov Decision Processes (MDPs), which provide a formal framework for modeling decision-making problems where outcomes are partly random and partly under the control of a decision-maker, involving state transitions influenced by actions. Finally, we give an overview of the two main branches of Reinforcement Learning: value-based methods, which focus on estimating the value of states or state-action pairs, and policy-based methods, which directly optimize the policy that dictates the agent&rsquo;s actions.</p>
+<p>We focus on Proximal Policy Optimization (PPO), which is the <em>de facto</em> baseline algorithm in modern RL literature due to its robustness and ease of implementation. We discuss its potential advantages, such as improved sample efficiency and stability, as well as its disadvantages, including sensitivity to hyper-parameters and computational overhead. We emphasize the importance of fine-tuning PPO to achieve optimal performance.</p>
+<p>We demonstrate the application of these concepts within <em>Pneuma</em>, a custom-made environment specifically designed for this thesis. <em>Pneuma</em> aims to become a research base for independent Multi-Agent Reinforcement Learning (MARL), where multiple agents learn and interact within the same environment. We outline the requirements for such environments to support MARL effectively and detail the modifications we made to the baseline PPO method, as presented by OpenAI, to facilitate agent convergence for a single-agent level.</p>
+<p>Finally, we discuss the potential for future enhancements to the <em>Pneuma</em> environment to increase its complexity and realism, aiming to create a more RPG-like setting, optimal for training agents in complex, multi-objective, and multi-step tasks.</p>
 
-<section class="social-icons">
-    <ul class="social-icons-list">
-        
-        <li class="social-icon">
-            <a href="https://www.github.com/aethrvmn"  aria-label="Learn more on github">
-                <img class="svg-inject" src="/svg/icons/github.svg" />
-            </a>
-        </li>
-        
-        <li class="social-icon">
-            <a href="https://www.linkedin.com/in/vasilvalat/"  aria-label="Learn more on linkedin">
-                <img class="svg-inject" src="/svg/icons/linkedin.svg" />
-            </a>
-        </li>
-        
-        <li class="social-icon">
-            <a href="https://t.me/aethrvmn"  aria-label="Learn more on telegram">
-                <img class="svg-inject" src="/svg/icons/telegram.svg" />
-            </a>
-        </li>
-        
-        <li class="social-icon">
-            <a href="mailto:vasilvalat@gmail.com"  aria-label="Learn more on email">
-                <img class="svg-inject" src="/svg/icons/email.svg" />
-            </a>
-        </li>
-        
-    </ul>
-</section>
+        </p>
+    </div>
+</div>
 
 
-
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#reinforcement-learning-theory-and-implementation-in-a-custom-environment">Reinforcement Learning: Theory and Implementation in a Custom Environment</a>
+      <ul>
+        <li><a href="#abstract">Abstract</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </nav>
+</aside>
 
 
 

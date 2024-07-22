@@ -4,7 +4,7 @@
     <title>Vasilis Valatsos</title>
     <link>https://www.valatsos.gr/</link>
     <description>Recent content on Vasilis Valatsos</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 01 May 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.valatsos.gr/index.xml" rel="self" type="application/rss+xml" />
@@ -35,6 +35,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.valatsos.gr/projects/human-diffusion/</guid>
       <description>Human Diffusion You can find the repository here&#xA;A Q-Learning Process About The Human Migration From Africa We start by importing the proper modules (equivalent to libraries in R).&#xA;These are&#xA;NumPy MatPlotLib Pandas PIL, (Pillow) an image handler tqdm, (pronounced ta-qa-dum) from Arabic (taqadum, تقدّم) meaning progress, is a simple progress bar to be able to estimate the time for each task #pip install -r requirements.txt from earth import Earth Generating the Map We initialise the picture that we want to use, and convert it into pixel values, so we can have a pure black and white image of the earth to use.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://www.valatsos.gr/projects/master-thesis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.valatsos.gr/projects/master-thesis/</guid>
+      <description>Reinforcement Learning: Theory and Implementation in a Custom Environment You can find the thesis here and the code here&#xA;Abstract Reinforcement Learning (RL) is a subcategory of Machine Learning that consistently surpasses human performance and demonstrates superhuman understanding in various environments and datasets. Its applications span from mastering games like Go and Chess to optimizing real-world operations in robotics, finance, and healthcare. The adaptability and efficiency of RL algorithms in dynamic and complex scenarios highlight their transformative potential across multiple domains.</description>
     </item>
     <item>
       <title>About Me</title>

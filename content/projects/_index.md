@@ -13,4 +13,4 @@ In no particular order they are:
 
 - ## [Simulating the Black-Scholes Model](/projects/black-scholes/)
 
-- ## [My Master Thesis] (ongoing)
+- ## [My Master Thesis](/projects/master-thesis/)
